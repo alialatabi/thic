@@ -1,12 +1,14 @@
 import { React } from "react";
+import { Route, Router, Routes } from "react-router";
 import "./App.css";
-import Nav from "./Componants/Nav";
+import WithLayout from "./Componants/WithLayout";
+import Home from "./Pages/Home";
 
 function App() {
   return (
-    <div>
-      <Nav />
-    </div>
+    <Routes>
+      <Route path="/" element={WithLayout(Home)} />
+    </Routes>
   );
 }
 
