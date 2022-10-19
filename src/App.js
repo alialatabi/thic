@@ -1,5 +1,5 @@
 import { React } from "react";
-import { Route, Router, Routes } from "react-router";
+import { Route, Routes } from "react-router";
 import "./App.css";
 import WithLayout from "./Componants/WithLayout";
 import Home from "./Pages/Home";

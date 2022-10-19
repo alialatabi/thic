@@ -9,9 +9,44 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.path-0 {
+    animation: pathAnim-0 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pathAnim-0 {
+    0% {
+        d: path("M 0,600 C 0,600 0,300 0,300 C 252.5,344.5 505,389 745,389 C 985,389 1212.5,344.5 1440,300 C 1440,300 1440,600 1440,600 Z");
+    }
+
+    25% {
+        d: path("M 0,600 C 0,600 0,300 0,300 C 176,318.5 352,337 592,337 C 832,337 1136,318.5 1440,300 C 1440,300 1440,600 1440,600 Z");
+    }
+
+    50% {
+        d: path("M 0,600 C 0,600 0,300 0,300 C 299,332.5 598,365 838,365 C 1078,365 1259,332.5 1440,300 C 1440,300 1440,600 1440,600 Z");
+    }
+
+    75% {
+        d: path("M 0,600 C 0,600 0,300 0,300 C 303,273 606,246 846,246 C 1086,246 1263,273 1440,300 C 1440,300 1440,600 1440,600 Z");
+    }
+
+    100% {
+        d: path("M 0,600 C 0,600 0,300 0,300 C 252.5,344.5 505,389 745,389 C 985,389 1212.5,344.5 1440,300 C 1440,300 1440,600 1440,600 Z");
+    }
 }

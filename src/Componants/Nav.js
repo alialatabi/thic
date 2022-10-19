@@ -7,7 +7,7 @@ import w3 from "../static/images/navwave3.svg";
 
 export default function Nav() {
   return (
-    <nav className="fixed w-full z-10 top-0 left-0">
+    <nav className="w-full z-10 top-0 left-0">
       <img src={w1} className="w-full relative z-20 translate-x-3" />
       <img src={w2} className="w-full relative z-10 -mt-[9%]" />
       <img src={w3} className="w-full relative z-0 -mt-[11.5%] " />
