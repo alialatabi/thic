@@ -50,3 +50,34 @@ code {
         d: path("M 0,600 C 0,600 0,300 0,300 C 252.5,344.5 505,389 745,389 C 985,389 1212.5,344.5 1440,300 C 1440,300 1440,600 1440,600 Z");
     }
 }
+
+@keyframes scaling {
+    from {
+        scale: 75%;
+    }
+
+    to {
+        scale: 100%;
+    }
+}
+.landing-animate-image{
+    animation-name: scaling;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes sliding-in {
+    from {
+        transform: translate(-250px, 0);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+.landing-animate-text{
+        animation-name: sliding-in;
+        animation-duration: 2.5s;
+        animation-timing-function: ease-out;
+}
