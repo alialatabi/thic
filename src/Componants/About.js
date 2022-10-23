@@ -1,8 +1,59 @@
 import infinity from "../static/images/Infinity.png";
 import dots from "../static/images/dots.png";
 import iso from "../static/images/iso.png";
+import { useState } from "react";
+import { motion, Variants } from "framer-motion";
 
+<<<<<<< HEAD
 export default function About() {
+=======
+export default function Landing() {
+  const springYVariants = {
+    offscreen: {
+      y: 200,
+    },
+    onscreen: {
+      y: 0,
+      rotate: 0,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 0.8,
+      },
+    },
+  };
+
+  const springXVariants = {
+    offscreen: {
+      x: 200,
+    },
+    onscreen: {
+      x: 0,
+      rotate: 0,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 0.8,
+      },
+    },
+  };
+
+  const springXRVariants = {
+    offscreen: {
+      x: -200,
+    },
+    onscreen: {
+      x: 0,
+      rotate: 0,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 0.8,
+      },
+    },
+  };
+
+>>>>>>> 41e27588ce1e3c1690f9c9f282087480f4eff559
   return (
     <div className="flex flex-col bg-[#F1F2F4] mt-2 px-6 mx-auto space-y-6">
       <div className="flex flex-row">
@@ -14,18 +65,36 @@ export default function About() {
         />
       </div>
 
-      <div className="flex flex-row items-center justify-center ml-16 z-10">
-        <img className="w-36" src={dots} alt="infinit insurance" />
-        <p className="text-md text-slate-500 font-semibold ml-4 w-[38%]">
+      <motion.div
+        className="flex flex-row items-center justify-center ml-16 z-10"
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0.8 }}
+      >
+        <motion.div variants={springXRVariants}>
+          <img className="w-36 " src={dots} alt="infinit insurance " />
+        </motion.div>
+        <motion.div
+          variants={springXVariants}
+          className="text-md text-slate-500 font-semibold ml-4 w-[38%] "
+        >
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, sum
-        </p>
-      </div>
+        </motion.div>
+      </motion.div>
 
-      <div className="flex flex-row items-center justify-center ml-16 relative z-0 ">
+      <motion.div
+        className="flex flex-row items-center justify-center ml-16 relative z-0"
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0.8 }}
+      >
         <img className="w-[35%] -mt-14" src={iso} alt="infinit insurance" />
-        <p className="text-md text-slate-500 font-semibold ml-16 pr-16 w-[55%]">
+        <motion.div
+          variants={springYVariants}
+          className="text-md text-slate-500 font-semibold ml-16 pr-16 w-[55%]"
+        >
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
@@ -35,8 +104,8 @@ export default function About() {
           the release of Letraset sheets containing Lorem Ipsum passages, and
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum
-        </p>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 }

@@ -60,9 +60,24 @@ code {
         scale: 100%;
     }
 }
-.landing-animate-image{
+.scalling-animate75{
     animation-name: scaling;
     animation-duration: 2.5s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes scaling2 {
+    from {
+        scale: 50%;
+    }
+
+    to {
+        scale: 100%;
+    }
+}
+.scalling-animate50 {
+    animation-name: scaling2;
+    animation-duration: 3s;
     animation-timing-function: ease-out;
 }
 
@@ -76,8 +91,24 @@ code {
     }
 }
 
-.landing-animate-text{
+.sliding-animate-rtl{
         animation-name: sliding-in;
         animation-duration: 2.5s;
         animation-timing-function: ease-out;
+}
+
+@keyframes sliding-in2 {
+    from {
+        transform: translate(250px, 0);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+.sliding-animate-ltr {
+    animation-name: sliding-in2;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-out;
 }
