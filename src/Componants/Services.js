@@ -2,7 +2,7 @@ import infinity from "../static/images/Infinity.png";
 import dots from "../static/images/dots.png";
 import iso from "../static/images/iso.png";
 
-export default function About() {
+export default function Services() {
   return (
     <div className="flex flex-col bg-[#F1F2F4] mt-2 px-6 mx-auto space-y-6">
       <div className="flex flex-row">

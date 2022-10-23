@@ -8,11 +8,11 @@ import w3 from "../static/images/navwave3.svg";
 export default function Nav() {
   return (
     <nav className="w-full z-10 top-0 left-0">
-      <img src={w1} className="w-full relative z-20 translate-x-3" />
+      <img src={w1} className="w-full relative z-20 " />
       <img src={w2} className="w-full relative z-10 -mt-[9%]" />
       <img src={w3} className="w-full relative z-0 -mt-[11.5%] " />
 
-      <div className="container flex flex-wrap justify-between items-center mx-auto relative z-30 -mt-[12%]">
+      <div className="container flex flex-wrap justify-between items-center lg:w-[90%] mx-auto relative z-30 -mt-[12%]">
         <a href="#" className="flex items-center">
           <img
             src={logo}
@@ -60,7 +60,7 @@ export default function Nav() {
             <li>
               <a
                 href="#"
-                className="block py-2 pr-4 pl-3  md:p-0 text-sm text-slate-900 focus:text-white"
+                className="block py-2 pr-4 pl-3  md:p-0 text-lg font-bold text-slate-800 focus:text-white hover:text-slate-600"
                 aria-current="page"
               >
                 Home
@@ -70,7 +70,7 @@ export default function Nav() {
             <li>
               <a
                 href="#"
-                className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-900 focus:text-white"
+                className="block py-2 pr-4 pl-3 md:p-0 text-lg font-bold text-slate-800 focus:text-white hover:text-slate-600"
               >
                 About
               </a>
@@ -79,7 +79,7 @@ export default function Nav() {
             <li>
               <a
                 href="#"
-                className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-900 focus:text-white"
+                className="block py-2 pr-4 pl-3 md:p-0 text-lg font-bold text-slate-800 focus:text-white hover:text-slate-600"
               >
                 Services
               </a>
@@ -88,7 +88,7 @@ export default function Nav() {
             <li>
               <a
                 href="#"
-                className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-900 focus:text-white"
+                className="block py-2 pr-4 pl-3 md:p-0 text-lg font-bold text-slate-800 focus:text-white hover:text-slate-600"
               >
                 Contact
               </a>
