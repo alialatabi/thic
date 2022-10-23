@@ -60,7 +60,7 @@ export default function Nav() {
             <li>
               <a
                 href="#"
-                className="block py-2 pr-4 pl-3  md:p-0 text-sm text-slate-900 focus:text-white"
+                className="block py-2 pr-4 pl-3  md:p-0 text-sm text-slate-100 focus:text-white underline focus:no-underline font-bold"
                 aria-current="page"
               >
                 Home
@@ -70,7 +70,7 @@ export default function Nav() {
             <li>
               <a
                 href="#"
-                className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-900 focus:text-white"
+                className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-100 focus:text-white underline focus:no-underline font-bold"
               >
                 About
               </a>
@@ -79,7 +79,7 @@ export default function Nav() {
             <li>
               <a
                 href="#"
-                className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-900 focus:text-white"
+                className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-100 focus:text-white underline focus:no-underline font-bold"
               >
                 Services
               </a>
@@ -88,7 +88,7 @@ export default function Nav() {
             <li>
               <a
                 href="#"
-                className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-900 focus:text-white"
+                className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-100 focus:text-white underline focus:no-underline font-bold"
               >
                 Contact
               </a>

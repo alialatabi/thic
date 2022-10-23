@@ -3,7 +3,7 @@ import blgsbg from "../static/images/blgsbg.png";
 export default function Landing() {
   return (
     <div className=" container mt-36 flex flex-col px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
-      <div className="lg:w-[50%] landing-animate-text">
+      <div className="lg:w-[50%] sliding-animate-rtl">
         <div className="lg:max-w-lg">
           <h1 className="text-2xl font-bold tracking-wide text-gray-800 lg:text-4xl -mt-[40%]">
             Trust House Insurance
@@ -28,14 +28,14 @@ export default function Landing() {
         </div>
       </div>
 
-      <div className="flex items-center justify-center w-full relative h-[100%] lg:w-[75%] lg:h-[150%] landing-animate-image">
+      <div className="flex items-center justify-center w-full relative h-[100%] lg:w-[75%] lg:h-[150%] ">
         <img
-          className="w-full h-auto mx-auto lg:max-w-2xl absolute z-0"
+          className="w-full h-auto mx-auto lg:max-w-2xl absolute z-0 scalling-animate50"
           src={blgsbg}
           alt="Fire Insurance"
         />
         <img
-          className="w-full h-full mx-auto lg:max-w-2xl absolute z-10"
+          className="w-full h-full mx-auto lg:max-w-2xl absolute z-10 scalling-animate75"
           src={blgs}
           alt="Trust House Insurance Company"
         />
