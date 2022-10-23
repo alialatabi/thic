@@ -4,9 +4,6 @@ import iso from "../static/images/iso.png";
 import { useState } from "react";
 import { motion, Variants } from "framer-motion";
 
-<<<<<<< HEAD
-export default function About() {
-=======
 export default function Landing() {
   const springYVariants = {
     offscreen: {
@@ -53,7 +50,6 @@ export default function Landing() {
     },
   };
 
->>>>>>> 41e27588ce1e3c1690f9c9f282087480f4eff559
   return (
     <div className="flex flex-col bg-[#F1F2F4] mt-2 px-6 mx-auto space-y-6">
       <div className="flex flex-row">
