@@ -1,42 +1,148 @@
-import infinity from "../static/images/Infinity.png";
-import dots from "../static/images/dots.png";
-import iso from "../static/images/iso.png";
-
+import { motion } from "framer-motion";
+import ship from "../static/images/ship.png";
+import health from "../static/images/health.png";
+import fire from "../static/images/fire.png";
+import motor from "../static/images/motor.png";
+import eng from "../static/images/eng.png";
+import personal from "../static/images/personal.png";
 export default function Services() {
+  const springYVariants = {
+    offscreen: {
+      y: 200,
+      opacity: 0,
+    },
+    onscreen: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.6,
+        duration: 1.0,
+      },
+    },
+  };
+  const springYRVariants = {
+    offscreen: {
+      y: -200,
+      opacity: 0,
+    },
+    onscreen: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.6,
+        duration: 1.0,
+      },
+    },
+  };
+
+  const springXVariants = {
+    offscreen: {
+      x: 200,
+      opacity: 0,
+    },
+    onscreen: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.6,
+        duration: 1.0,
+      },
+    },
+  };
+
+  const springXRVariants = {
+    offscreen: {
+      x: -200,
+      opacity: 0,
+    },
+    onscreen: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.6,
+        duration: 1.0,
+      },
+    },
+  };
+
   return (
-    <div className="flex flex-col bg-[#F1F2F4] mt-2 px-6 mx-auto space-y-6">
-      <div className="flex flex-row">
-        <p className="text-2xl text-slate-800 font-semibold mt-8">About Us</p>
-        <img
-          className="absolute right-0 w-36"
-          src={infinity}
-          alt="infinit insurance"
-        />
-      </div>
-
-      <div className="flex flex-row items-center justify-center ml-16 z-10">
-        <img className="w-36" src={dots} alt="infinit insurance" />
-        <p className="text-md text-slate-500 font-semibold ml-4 w-[38%]">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, sum
+    <motion.div
+      className="flex flex-row flex-wrap bg-[#0A479B] m-12 rounded-lg gap-5"
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true, amount: 1.0 }}
+    >
+      <motion.div
+        className="text-center mx-auto w-[25%] bg-white rounded-lg m-8 p-8 grayscale hover:grayscale-0 hover:shadow-2xl"
+        variants={springXRVariants}
+      >
+        <img src={ship} alt="Marine Insurance" className="mx-auto mb-3 " />
+        <p className="text-xl font-bold text-slate-700">Marine Insurance</p>
+        <p className="text-base text-slate-600 ">
+          Lorem Ipsum is simply dummy text including versions of Lorem Ipsum
         </p>
-      </div>
+      </motion.div>
 
-      <div className="flex flex-row items-center justify-center ml-16 relative z-0 ">
-        <img className="w-[35%] -mt-14" src={iso} alt="infinit insurance" />
-        <p className="text-md text-slate-500 font-semibold ml-16 pr-16 w-[55%]">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum
+      <motion.div
+        className="text-center mx-auto w-[25%] bg-white rounded-lg m-8 p-8 grayscale hover:grayscale-0 hover:shadow-2xl"
+        variants={springYRVariants}
+      >
+        <img src={health} alt="Medical Insurance" className="mx-auto mb-3" />
+        <p className="text-xl font-bold text-slate-700">Medical Insurance</p>
+        <p className="text-base text-slate-600 ">
+          Lorem Ipsum is simply dummy text including versions of Lorem Ipsum
         </p>
-      </div>
-    </div>
+      </motion.div>
+
+      <motion.div
+        className="text-center mx-auto w-[25%] bg-white rounded-lg m-8 p-8 grayscale hover:grayscale-0 hover:shadow-2xl"
+        variants={springXVariants}
+      >
+        <img src={fire} alt="Fire Insurance" className="mx-auto mb-3" />
+        <p className="text-xl font-bold text-slate-700">Fire Insurance</p>
+        <p className="text-base text-slate-600 ">
+          Lorem Ipsum is simply dummy text including versions of Lorem Ipsum
+        </p>
+      </motion.div>
+
+      <motion.div
+        className="text-center mx-auto w-[25%] bg-white rounded-lg m-8 p-8 grayscale hover:grayscale-0 hover:shadow-2xl"
+        variants={springXRVariants}
+      >
+        <img src={motor} alt="Motor Insurance" className="mx-auto mb-3" />
+        <p className="text-xl font-bold text-slate-700">Motor Insurance</p>
+        <p className="text-base text-slate-600 ">
+          Lorem Ipsum is simply dummy text including versions of Lorem Ipsum
+        </p>
+      </motion.div>
+
+      <motion.div
+        className="text-center mx-auto w-[25%] bg-white rounded-lg m-8 p-8 grayscale hover:grayscale-0 hover:shadow-2xl"
+        variants={springYVariants}
+      >
+        <img src={eng} alt="Engineering Insurance" className="mx-auto mb-3" />
+        <p className="text-xl font-bold text-slate-700">
+          Engineering Insurance
+        </p>
+        <p className="text-base text-slate-600 ">
+          Lorem Ipsum is simply dummy text including versions of Lorem Ipsum
+        </p>
+      </motion.div>
+
+      <motion.div
+        className="text-center mx-auto w-[25%] bg-white rounded-lg m-8 p-8 grayscale hover:grayscale-0 hover:shadow-2xl"
+        variants={springXVariants}
+      >
+        <img src={personal} alt="Personal Insurance" className="mx-auto mb-3" />
+        <p className="text-xl font-bold text-slate-700">Personal Insurance</p>
+        <p className="text-base text-slate-600 ">
+          Lorem Ipsum is simply dummy text including versions of Lorem Ipsum
+        </p>
+      </motion.div>
+    </motion.div>
   );
 }

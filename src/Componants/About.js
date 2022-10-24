@@ -2,7 +2,7 @@ import infinity from "../static/images/Infinity.png";
 import dots from "../static/images/dots.png";
 import iso from "../static/images/iso.png";
 import { useState } from "react";
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function Landing() {
   const springYVariants = {
