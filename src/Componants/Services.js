@@ -71,13 +71,13 @@ export default function Services() {
 
   return (
     <motion.div
-      className="flex flex-row flex-wrap bg-[#0A479B] m-12 rounded-lg gap-5"
+      className="flex flex-col md:flex-row flex-wrap bg-[#0A479B] m-12 rounded-lg gap-5"
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 1.0 }}
     >
       <motion.div
-        className="text-center mx-auto w-[25%] bg-white rounded-lg m-8 p-8 grayscale hover:grayscale-0 hover:shadow-2xl"
+        className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg m-8 p-8 grayscale hover:grayscale-0 hover:shadow-2xl"
         variants={springXRVariants}
       >
         <img src={ship} alt="Marine Insurance" className="mx-auto mb-3 " />
@@ -88,7 +88,7 @@ export default function Services() {
       </motion.div>
 
       <motion.div
-        className="text-center mx-auto w-[25%] bg-white rounded-lg m-8 p-8 grayscale hover:grayscale-0 hover:shadow-2xl"
+        className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg m-8 p-8 grayscale hover:grayscale-0 hover:shadow-2xl"
         variants={springYRVariants}
       >
         <img src={health} alt="Medical Insurance" className="mx-auto mb-3" />
@@ -99,7 +99,7 @@ export default function Services() {
       </motion.div>
 
       <motion.div
-        className="text-center mx-auto w-[25%] bg-white rounded-lg m-8 p-8 grayscale hover:grayscale-0 hover:shadow-2xl"
+        className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg m-8 p-8 grayscale hover:grayscale-0 hover:shadow-2xl"
         variants={springXVariants}
       >
         <img src={fire} alt="Fire Insurance" className="mx-auto mb-3" />
@@ -110,7 +110,7 @@ export default function Services() {
       </motion.div>
 
       <motion.div
-        className="text-center mx-auto w-[25%] bg-white rounded-lg m-8 p-8 grayscale hover:grayscale-0 hover:shadow-2xl"
+        className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg m-8 p-8 grayscale hover:grayscale-0 hover:shadow-2xl"
         variants={springXRVariants}
       >
         <img src={motor} alt="Motor Insurance" className="mx-auto mb-3" />
@@ -121,7 +121,7 @@ export default function Services() {
       </motion.div>
 
       <motion.div
-        className="text-center mx-auto w-[25%] bg-white rounded-lg m-8 p-8 grayscale hover:grayscale-0 hover:shadow-2xl"
+        className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg m-8 p-8 grayscale hover:grayscale-0 hover:shadow-2xl"
         variants={springYVariants}
       >
         <img src={eng} alt="Engineering Insurance" className="mx-auto mb-3" />
@@ -134,7 +134,7 @@ export default function Services() {
       </motion.div>
 
       <motion.div
-        className="text-center mx-auto w-[25%] bg-white rounded-lg m-8 p-8 grayscale hover:grayscale-0 hover:shadow-2xl"
+        className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg m-8 p-8 grayscale hover:grayscale-0 hover:shadow-2xl"
         variants={springXVariants}
       >
         <img src={personal} alt="Personal Insurance" className="mx-auto mb-3" />
