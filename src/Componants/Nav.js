@@ -16,7 +16,7 @@ export default function Nav() {
       transition: {
         type: "spring",
         bounce: 0.0,
-        duration: 3,
+        duration: 3.5,
       },
     },
   };
@@ -31,7 +31,7 @@ export default function Nav() {
       transition: {
         type: "spring",
         bounce: 0.0,
-        duration: 2,
+        duration: 2.5,
       },
     },
   };
@@ -46,7 +46,7 @@ export default function Nav() {
       transition: {
         type: "spring",
         bounce: 0.0,
-        duration: 1,
+        duration: 1.5,
       },
     },
   };
@@ -78,11 +78,11 @@ export default function Nav() {
         />
       </motion.div>
 
-      <div className="container flex flex-wrap justify-between items-center lg:w-[90%] mx-auto relative z-30 -mt-[12%]">
+      <div className="container flex flex-wrap justify-between items-center lg:w-[80%] mx-auto relative z-30 -mt-[12%]">
         <a href="#" className="flex items-center">
           <img
             src={logo}
-            className="w-16 "
+            className="w-24"
             alt="trust house insurance company"
           />
         </a>
