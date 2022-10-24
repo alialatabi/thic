@@ -16,8 +16,8 @@ export default function Services() {
       opacity: 1,
       transition: {
         type: "spring",
-        bounce: 0.6,
-        duration: 1.0,
+        bounce: 0.3,
+        duration: 1.8,
       },
     },
   };
@@ -31,8 +31,8 @@ export default function Services() {
       opacity: 1,
       transition: {
         type: "spring",
-        bounce: 0.6,
-        duration: 1.0,
+        bounce: 0.3,
+        duration: 1.8,
       },
     },
   };
@@ -47,8 +47,8 @@ export default function Services() {
       opacity: 1,
       transition: {
         type: "spring",
-        bounce: 0.6,
-        duration: 1.0,
+        bounce: 0.3,
+        duration: 1.8,
       },
     },
   };
@@ -63,8 +63,8 @@ export default function Services() {
       opacity: 1,
       transition: {
         type: "spring",
-        bounce: 0.6,
-        duration: 1.0,
+        bounce: 0.3,
+        duration: 1.8,
       },
     },
   };

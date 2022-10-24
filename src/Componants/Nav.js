@@ -1,16 +1,82 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable jsx-a11y/alt-text */
 import logo from "../static/images/Logo.png";
 import w1 from "../static/images/navwave1.svg";
 import w2 from "../static/images/navwave2.svg";
 import w3 from "../static/images/navwave3.svg";
+import { motion } from "framer-motion";
 
 export default function Nav() {
+  const springYVariants = {
+    offscreen: {
+      y: -200,
+      opacity: 1,
+    },
+    onscreen: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.0,
+        duration: 3,
+      },
+    },
+  };
+  const springYVariants1 = {
+    offscreen: {
+      y: -200,
+      opacity: 1,
+    },
+    onscreen: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.0,
+        duration: 2,
+      },
+    },
+  };
+  const springYVariants2 = {
+    offscreen: {
+      y: -200,
+      opacity: 1,
+    },
+    onscreen: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.0,
+        duration: 1,
+      },
+    },
+  };
+
   return (
     <nav className="w-full z-10 top-0 left-0">
-      <img src={w1} className="w-full relative z-20 " />
-      <img src={w2} className="w-full relative z-10 -mt-[9%]" />
-      <img src={w3} className="w-full relative z-0 -mt-[11.5%] " />
+      <motion.div
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 1.0 }}
+      >
+        <motion.img
+          src={w1}
+          className="w-full relative z-20 "
+          alt=""
+          variants={springYVariants}
+        />
+        <motion.img
+          src={w2}
+          className="w-full relative z-10 -mt-[9%]"
+          alt=""
+          variants={springYVariants1}
+        />
+        <motion.img
+          src={w3}
+          className="w-full relative z-0 -mt-[11.5%] "
+          alt=""
+          variants={springYVariants2}
+        />
+      </motion.div>
 
       <div className="container flex flex-wrap justify-between items-center lg:w-[90%] mx-auto relative z-30 -mt-[12%]">
         <a href="#" className="flex items-center">
