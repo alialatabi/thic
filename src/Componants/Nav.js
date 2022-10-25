@@ -52,8 +52,21 @@ export default function Nav() {
     },
   };
 
+  const toAbout = () => {
+    document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+  };
+  const toHome = () => {
+    document.getElementById("home").scrollIntoView({ behavior: "smooth" });
+  };
+  const toServices = () => {
+    document.getElementById("services").scrollIntoView({ behavior: "smooth" });
+  };
+  const toTeam = () => {
+    document.getElementById("team").scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <nav className="w-full z-10 top-0 left-0">
+    <nav className="w-full z-50 top-0 left-0 ">
       <motion.div
         initial="offscreen"
         whileInView="onscreen"
@@ -79,7 +92,7 @@ export default function Nav() {
         />
       </motion.div>
 
-      <div className="container flex flex-wrap justify-between items-center lg:w-[80%] mx-auto relative z-30 -mt-[12%]">
+      <div className="container flex flex-wrap justify-between items-center lg:w-[80%] mx-auto relative z-30 -mt-[12%] ">
         <Link to={"/"} className="flex items-center">
           <img
             src={logo}
@@ -125,40 +138,45 @@ export default function Nav() {
         >
           <ul className="flex flex-col gap-x-8 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium ">
             <li>
-              <a
-                href="#"
+              <button
                 className="block py-2 pr-4 pl-3  md:p-0 text-sm text-slate-100 focus:text-white underline focus:no-underline font-bold"
-                aria-current="page"
+                onClick={toHome}
               >
                 Home
-              </a>
+              </button>
             </li>
 
             <li>
-              <a
-                href="#"
+              <button
                 className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-100 focus:text-white underline focus:no-underline font-bold"
+                onClick={toAbout}
               >
                 About
-              </a>
+              </button>
             </li>
 
             <li>
-              <a
-                href="#"
+              <button
                 className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-100 focus:text-white underline focus:no-underline font-bold"
+                onClick={toServices}
               >
                 Services
-              </a>
+              </button>
             </li>
 
             <li>
-              <a
-                href="#"
+              <button
                 className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-100 focus:text-white underline focus:no-underline font-bold"
+                onClick={toTeam}
               >
+                Our Team
+              </button>
+            </li>
+
+            <li>
+              <button className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-100 focus:text-white underline focus:no-underline font-bold">
                 Contact
-              </a>
+              </button>
             </li>
           </ul>
         </div>

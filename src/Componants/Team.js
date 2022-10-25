@@ -66,7 +66,7 @@ export default function Team() {
   };
 
   return (
-    <div className=" ">
+    <div id="team">
       <p className="ml-12 text-3xl font-semibold text-slate-700">Our Team</p>
       <motion.div
         className="grid grid-cols-4 m-12 gap-10 "

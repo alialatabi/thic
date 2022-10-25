@@ -73,7 +73,8 @@ export default function Services() {
 
   return (
     <motion.div
-      className="bg-[#0A479B] m-12 rounded-lg  "
+      className="bg-[#0A479B] m-12 rounded-lg"
+      id="services"
       //   initial="offscreen"
       //   whileInView="onscreen"
       //   viewport={{ once: true, amount: 1.0 }}

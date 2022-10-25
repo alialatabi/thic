@@ -53,7 +53,9 @@ export default function Landing() {
   return (
     <div className="flex flex-col bg-[#F1F2F4] mt-2 px-6 mx-auto space-y-6">
       <div className="flex flex-row">
-        <p className="text-2xl text-slate-800 font-semibold mt-8">About Us</p>
+        <p className="text-2xl text-slate-800 font-semibold mt-8" id="about">
+          About Us
+        </p>
         <img
           className="absolute right-0 w-36"
           src={infinity}

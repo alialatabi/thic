@@ -1,11 +1,18 @@
-import blgs from "../static/images/blgs.png";
-import blgsbg from "../static/images/blgsbg.png";
+import { useState } from "react";
+import blgs from "../static/images/landing/blgs.png";
+import blgsbg from "../static/images/landing/blgsbg.png";
 export default function Landing() {
+  const toAbout = () => {
+    document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className=" container mt-36 flex flex-col px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
       <div className="lg:w-[50%] sliding-animate-rtl">
         <div className="lg:max-w-lg">
-          <h1 className="text-2xl font-bold tracking-wide text-gray-800 lg:text-4xl -mt-[40%]">
+          <h1
+            className="text-2xl font-bold tracking-wide text-gray-800 lg:text-4xl -mt-[40%]"
+            id="home"
+          >
             Trust House Insurance
           </h1>
 
@@ -21,7 +28,10 @@ export default function Landing() {
                 Order concerning insurance companies’ capital.
               </span>
             </p>
-            <button className="text-white bg-gray-700 hover:bg-blue-600 font-medium rounded-lg text-sm px-5 py-2.5 text-center md:mr-0 ">
+            <button
+              className="text-white bg-gray-700 hover:bg-blue-600 font-medium rounded-lg text-sm px-5 py-2.5 text-center md:mr-0 "
+              onClick={toAbout}
+            >
               See More
             </button>
           </div>
