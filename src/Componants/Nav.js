@@ -3,6 +3,7 @@ import w1 from "../static/images/navwave1.svg";
 import w2 from "../static/images/navwave2.svg";
 import w3 from "../static/images/navwave3.svg";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function Nav() {
   const springYVariants = {
@@ -79,13 +80,13 @@ export default function Nav() {
       </motion.div>
 
       <div className="container flex flex-wrap justify-between items-center lg:w-[80%] mx-auto relative z-30 -mt-[12%]">
-        <a href="#" className="flex items-center">
+        <Link to={"/"} className="flex items-center">
           <img
             src={logo}
             className="w-24"
             alt="trust house insurance company"
           />
-        </a>
+        </Link>
 
         <div className="flex md:order-2">
           <button
