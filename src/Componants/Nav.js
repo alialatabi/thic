@@ -139,7 +139,7 @@ export default function Nav() {
           <ul className="flex flex-col gap-x-8 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium ">
             <li>
               <button
-                className="block py-2 pr-4 pl-3  md:p-0 text-sm text-slate-100 focus:text-white underline focus:no-underline font-bold"
+                className="block py-2 pr-4 pl-3  md:p-0 text-sm text-slate-100 focus:text-white w-full border-b-2 border-b-red-500 focus:border-b-white hover:border-b-red-200 font-bold"
                 onClick={toHome}
               >
                 Home
@@ -148,7 +148,7 @@ export default function Nav() {
 
             <li>
               <button
-                className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-100 focus:text-white underline focus:no-underline font-bold"
+                className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-100 focus:text-white w-full border-b-2 border-b-red-500 focus:border-b-white hover:border-b-red-200 font-bold"
                 onClick={toAbout}
               >
                 About
@@ -157,7 +157,7 @@ export default function Nav() {
 
             <li>
               <button
-                className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-100 focus:text-white underline focus:no-underline font-bold"
+                className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-100 focus:text-white w-full border-b-2 border-b-red-500 focus:border-b-white hover:border-b-red-200 font-bold"
                 onClick={toServices}
               >
                 Services
@@ -166,7 +166,7 @@ export default function Nav() {
 
             <li>
               <button
-                className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-100 focus:text-white underline focus:no-underline font-bold"
+                className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-100 focus:text-white w-full border-b-2 border-b-red-500 focus:border-b-white hover:border-b-red-200 font-bold"
                 onClick={toTeam}
               >
                 Our Team
@@ -174,7 +174,7 @@ export default function Nav() {
             </li>
 
             <li>
-              <button className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-100 focus:text-white underline focus:no-underline font-bold">
+              <button className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-100 focus:text-white w-full border-b-2 border-b-red-500 focus:border-b-white hover:border-b-red-200 font-bold">
                 Contact
               </button>
             </li>
