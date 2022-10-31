@@ -73,17 +73,17 @@ export default function Services() {
 
   return (
     <motion.div
-      className="bg-[#12567F] m-12 rounded-lg"
+      className="bg-[#12567F] m-12 rounded-lg container mx-auto py-8 w-[90%]"
       id="services"
       //   initial="offscreen"
       //   whileInView="onscreen"
       //   viewport={{ once: true, amount: 1.0 }}
     >
-      <p className="ml-12 py-8 text-3xl font-semibold text-white">Services</p>
-      <motion.div className="flex flex-col md:flex-row flex-wrap gap-5">
+      <p className="ml-12 py-2 text-3xl font-semibold text-white">Services</p>
+      <motion.div className="flex flex-col md:flex-row flex-wrap gap-y-10 gap-x-1 py-4">
         <Link
           to={"/Service/Marine"}
-          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg m-8 p-8 grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
+          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg p-8 grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
         >
           <motion.div>
             <img src={ship} alt="Marine Insurance" className="mx-auto mb-3 " />
@@ -96,7 +96,7 @@ export default function Services() {
 
         <Link
           to={"/Service/Medical"}
-          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg m-8 p-8 grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
+          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg  p-8 grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
         >
           <motion.div>
             <img
@@ -114,7 +114,7 @@ export default function Services() {
         </Link>
         <Link
           to={"/Service/Fire"}
-          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg m-8 p-8 grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
+          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg  p-8 grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
         >
           <motion.div>
             <img src={fire} alt="Fire Insurance" className="mx-auto mb-3" />
@@ -127,7 +127,7 @@ export default function Services() {
 
         <Link
           to={"/Service/Motor"}
-          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg m-8 p-8 grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
+          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg  p-8 grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
         >
           <motion.div>
             <img src={motor} alt="Motor Insurance" className="mx-auto mb-3" />
@@ -140,7 +140,7 @@ export default function Services() {
 
         <Link
           to={"/Service/Engineering"}
-          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg m-8 p-8 grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
+          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg  p-8 grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
         >
           <motion.div>
             <img
@@ -159,7 +159,7 @@ export default function Services() {
 
         <Link
           to={"/Service/Personal"}
-          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg m-8 p-8 grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
+          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg  p-8 grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
         >
           <motion.div>
             <img

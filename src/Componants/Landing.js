@@ -6,11 +6,11 @@ export default function Landing() {
     document.getElementById("about").scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <div className=" container mt-36 flex flex-col px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
-      <div className="lg:w-[50%] sliding-animate-rtl">
+    <div className="container mt-36 flex flex-col px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center justify-center">
+      <div className="lg:w-[75%] sliding-animate-rtl ">
         <div className="lg:max-w-lg">
           <h1
-            className="text-2xl font-bold tracking-wide text-gray-800 lg:text-4xl -mt-[40%]"
+            className="text-2xl font-bold tracking-wide text-gray-800 lg:text-5xl -mt-[40%] w-full"
             id="home"
           >
             Trust House Insurance

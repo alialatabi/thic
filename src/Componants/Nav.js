@@ -174,9 +174,11 @@ export default function Nav() {
             </li>
 
             <li>
-              <button className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-100 focus:text-white w-full border-b-2 border-b-red-500 focus:border-b-white hover:border-b-red-200 font-bold">
-                Contact
-              </button>
+              <Link to={"/Contact"}>
+                <button className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-100 focus:text-white w-full border-b-2 border-b-red-500 focus:border-b-white hover:border-b-red-200 font-bold">
+                  Contact
+                </button>
+              </Link>
             </li>
           </ul>
         </div>

@@ -66,10 +66,10 @@ export default function Team() {
   };
 
   return (
-    <div id="team">
+    <div id="team" className="container mx-auto">
       <p className="ml-12 text-3xl font-semibold text-slate-700">Our Team</p>
       <motion.div
-        className="grid grid-cols-4 m-12 gap-10 "
+        className="grid grid-cols-4 m-12 gap-8"
         initial="offscreen"
         whileInView="onscreen"
         viewport={{ once: true, amount: 1.0 }}
@@ -85,49 +85,49 @@ export default function Team() {
 
         <motion.div className="col-span-3 flex flex-row flex-wrap gap-x-10 ">
           <motion.div className="w-[90%] md:w-[20%] 2xl:w[15%] text-center">
-            <div className="w-full h-40 2xl:h-64 bg-slate-500 rounded-lg"></div>
+            <div className="w-full h-32 2xl:h-48 bg-slate-500 rounded-lg"></div>
             <p className="text-lg font-semibold text-slate-700">Name</p>
             <p className="text-base text-slate-600">Position</p>
           </motion.div>
 
           <motion.div className="w-[90%] md:w-[20%] 2xl:w[15%] text-center">
-            <div className="w-full h-40 2xl:h-64 bg-slate-500 rounded-lg"></div>
+            <div className="w-full h-40 2xl:h-48 bg-slate-500 rounded-lg"></div>
             <p className="text-lg font-semibold text-slate-700">Name</p>
             <p className="text-base text-slate-600">Position</p>
           </motion.div>
 
           <motion.div className="w-[90%] md:w-[20%] 2xl:w[15%] text-center">
-            <div className="w-full h-40 2xl:h-64 bg-slate-500 rounded-lg"></div>
+            <div className="w-full h-40 2xl:h-48 bg-slate-500 rounded-lg"></div>
             <p className="text-lg font-semibold text-slate-700">Name</p>
             <p className="text-base text-slate-600">Position</p>
           </motion.div>
 
           <motion.div className="w-[90%] md:w-[20%] 2xl:w[15%] text-center">
-            <div className="w-full h-40 2xl:h-64 bg-slate-500 rounded-lg"></div>
+            <div className="w-full h-40 2xl:h-48 bg-slate-500 rounded-lg"></div>
             <p className="text-lg font-semibold text-slate-700">Name</p>
             <p className="text-base text-slate-600">Position</p>
           </motion.div>
 
           <motion.div className="w-[90%] md:w-[20%] 2xl:w[15%] text-center">
-            <div className="w-full h-40 2xl:h-64 bg-slate-500 rounded-lg"></div>
+            <div className="w-full h-40 2xl:h-48 bg-slate-500 rounded-lg"></div>
             <p className="text-lg font-semibold text-slate-700">Name</p>
             <p className="text-base text-slate-600">Position</p>
           </motion.div>
 
           <motion.div className="w-[90%] md:w-[20%] 2xl:w[15%] text-center">
-            <div className="w-full h-40 2xl:h-64 bg-slate-500 rounded-lg"></div>
+            <div className="w-full h-40 2xl:h-48 bg-slate-500 rounded-lg"></div>
             <p className="text-lg font-semibold text-slate-700">Name</p>
             <p className="text-base text-slate-600">Position</p>
           </motion.div>
 
           <motion.div className="w-[90%] md:w-[20%] 2xl:w[15%] text-center">
-            <div className="w-full h-40 2xl:h-64 bg-slate-500 rounded-lg"></div>
+            <div className="w-full h-40 2xl:h-48 bg-slate-500 rounded-lg"></div>
             <p className="text-lg font-semibold text-slate-700">Name</p>
             <p className="text-base text-slate-600">Position</p>
           </motion.div>
 
           <motion.div className="w-[90%] md:w-[20%] 2xl:w[15%] text-center">
-            <div className="w-full h-40 2xl:h-64 bg-slate-500 rounded-lg"></div>
+            <div className="w-full h-40 2xl:h-48 bg-slate-500 rounded-lg"></div>
             <p className="text-lg font-semibold text-slate-700">Name</p>
             <p className="text-base text-slate-600">Position</p>
           </motion.div>

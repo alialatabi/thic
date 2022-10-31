@@ -5,6 +5,7 @@ import Service from "./Pages/Searvice";
 import WithLayout from "./Componants/WithLayout";
 import Home from "./Pages/Home";
 import notfound from "./Pages/notfound";
+import Contact from "./Pages/Contact";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path="/Service/Personal" element={WithLayout(Service)} />
       <Route path="/Service/Medical" element={WithLayout(Service)} />
       <Route path="/Service/Engineering" element={WithLayout(Service)} />
+      <Route path="/Contact" element={WithLayout(Contact)} />
       <Route path="*" element={WithLayout(notfound)} />
     </Routes>
   );
