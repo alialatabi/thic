@@ -112,3 +112,12 @@ code {
     animation-duration: 2.5s;
     animation-timing-function: ease-out;
 }
+
+.touch{
+-webkit-overflow-scrolling: touch;
+scroll-snap-type: x mandatory;
+}
+
+.touch > div {
+scroll-snap-align: start;
+}

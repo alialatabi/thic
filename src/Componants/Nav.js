@@ -3,7 +3,7 @@ import w1 from "../static/images/navwave1.svg";
 import w2 from "../static/images/navwave2.svg";
 import w3 from "../static/images/navwave3.svg";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 export default function Nav() {
   const springYVariants = {
@@ -52,8 +52,13 @@ export default function Nav() {
     },
   };
 
+  const location = useLocation();
+  const navigate = useNavigate();
+
   const toAbout = () => {
-    document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+    location !== "/"
+      ? navigate("/")
+      : document.getElementById("about").scrollIntoView({ behavior: "smooth" });
   };
   const toHome = () => {
     document.getElementById("home").scrollIntoView({ behavior: "smooth" });
