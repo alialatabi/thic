@@ -1,3 +1,10 @@
+import shell from "../static/images/shell.png";
+import ke from "../static/images/KE.png";
+import pc from "../static/images/pc.png";
+import yasra from "../static/images/yasra.png";
+import zain from "../static/images/zain.png";
+import eni from "../static/images/eni.svg";
+
 export default function Partners() {
   return (
     <div id="partners" className="container mx-auto">
@@ -8,122 +15,58 @@ export default function Partners() {
         <div className="container mx-auto">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
-              <div
-                className="flex items-center justify-center overflow-x-auto touch MagicScroll"
-                data-options="autoplay: 1000; step: 1; mode: carousel; height: 275;"
-              >
+              <div className="flex items-center justify-center overflow-x-auto touch MagicScroll">
                 <div className="flex-shrink-0">
                   <a
                     href="#"
-                    className="mx-4 flex w-[150px] items-center justify-center py-5 2xl:w-[180px]"
+                    className="mx-4 flex w-[100px] items-center justify-center py-5 2xl:w-[100px]"
                   >
-                    <img
-                      src="https://cdn.tailgrids.com/1.0/assets/images/brands/graygrids.svg"
-                      alt="image"
-                      className="h-10 w-full"
-                    />
-                  </a>
-                </div>
-                <div className="flex-shrink-0">
-                  <a
-                    href="javascript:void(0)"
-                    className="mx-4 flex w-[150px] items-center justify-center py-5 2xl:w-[180px]"
-                  >
-                    <img
-                      src="https://cdn.tailgrids.com/1.0/assets/images/brands/lineicons.svg"
-                      alt="image"
-                      className="h-10 w-full"
-                    />
-                  </a>
-                </div>
-                <div className="flex-shrink-0">
-                  <a
-                    href="javascript:void(0)"
-                    className="mx-4 flex w-[150px] items-center justify-center py-5 2xl:w-[180px]"
-                  >
-                    <img
-                      src="https://cdn.tailgrids.com/1.0/assets/images/brands/uideck.svg"
-                      alt="image"
-                      className="h-10 w-full"
-                    />
+                    <img src={shell} alt="image" className=" w-full" />
                   </a>
                 </div>
 
                 <div className="flex-shrink-0">
                   <a
-                    href="javascript:void(0)"
-                    className="mx-4 flex w-[150px] items-center justify-center py-5 2xl:w-[180px]"
+                    href="#"
+                    className="mx-4 flex w-[100px] items-center justify-center py-5 2xl:w-[150px]"
                   >
-                    <img
-                      src="https://cdn.tailgrids.com/1.0/assets/images/brands/ayroui.svg"
-                      alt="image"
-                      className="h-10 w-full"
-                    />
+                    <img src={eni} alt="image" className=" w-full" />
                   </a>
                 </div>
 
                 <div className="flex-shrink-0">
                   <a
-                    href="javascript:void(0)"
-                    className="mx-4 flex w-[150px] items-center justify-center py-5 2xl:w-[180px]"
+                    href="#"
+                    className="mx-4 flex w-[100px] items-center justify-center py-5 2xl:w-[200px]"
                   >
-                    <img
-                      src="https://cdn.tailgrids.com/1.0/assets/images/brands/ayroui.svg"
-                      alt="image"
-                      className="h-10 w-full"
-                    />
+                    <img src={ke} alt="image" className="w-full" />
                   </a>
                 </div>
 
                 <div className="flex-shrink-0">
                   <a
-                    href="javascript:void(0)"
-                    className="mx-4 flex w-[150px] items-center justify-center py-5 2xl:w-[180px]"
+                    href="#"
+                    className="mx-4 flex w-[100px] items-center justify-center py-5 2xl:w-[200px]"
                   >
-                    <img
-                      src="https://cdn.tailgrids.com/1.0/assets/images/brands/ayroui.svg"
-                      alt="image"
-                      className="h-10 w-full"
-                    />
+                    <img src={pc} alt="image" className=" w-full" />
                   </a>
                 </div>
 
                 <div className="flex-shrink-0">
                   <a
-                    href="javascript:void(0)"
-                    className="mx-4 flex w-[150px] items-center justify-center py-5 2xl:w-[180px]"
+                    href="#"
+                    className="mx-4 flex w-[100px] items-center justify-center py-5 2xl:w-[140px]"
                   >
-                    <img
-                      src="https://cdn.tailgrids.com/1.0/assets/images/brands/ayroui.svg"
-                      alt="image"
-                      className="h-10 w-full"
-                    />
+                    <img src={zain} alt="image" className=" w-full" />
                   </a>
                 </div>
 
                 <div className="flex-shrink-0">
                   <a
-                    href="javascript:void(0)"
-                    className="mx-4 flex w-[150px] items-center justify-center py-5 2xl:w-[180px]"
+                    href="#"
+                    className="mx-4 flex w-[100px] items-center justify-center py-5 2xl:w-[130px]"
                   >
-                    <img
-                      src="https://cdn.tailgrids.com/1.0/assets/images/brands/ayroui.svg"
-                      alt="image"
-                      className="h-10 w-full"
-                    />
-                  </a>
-                </div>
-
-                <div className="flex-shrink-0">
-                  <a
-                    href="javascript:void(0)"
-                    className="mx-4 flex w-[150px] items-center justify-center py-5 2xl:w-[180px]"
-                  >
-                    <img
-                      src="https://cdn.tailgrids.com/1.0/assets/images/brands/ayroui.svg"
-                      alt="image"
-                      className="h-10 w-full"
-                    />
+                    <img src={yasra} alt="image" className=" w-full" />
                   </a>
                 </div>
               </div>
