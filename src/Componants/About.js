@@ -4,7 +4,7 @@ import iso from "../static/images/iso.png";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-export default function Landing() {
+export default function About() {
   const springYVariants = {
     offscreen: {
       y: 200,

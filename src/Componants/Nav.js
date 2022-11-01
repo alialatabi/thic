@@ -56,18 +56,26 @@ export default function Nav() {
   const navigate = useNavigate();
 
   const toAbout = () => {
-    location !== "/"
-      ? navigate("/")
-      : document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+    setTimeout(() => {
+      document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+    }, 200);
   };
   const toHome = () => {
-    document.getElementById("home").scrollIntoView({ behavior: "smooth" });
+    setTimeout(() => {
+      document.getElementById("home").scrollIntoView({ behavior: "smooth" });
+    }, 500);
   };
   const toServices = () => {
-    document.getElementById("services").scrollIntoView({ behavior: "smooth" });
+    setTimeout(() => {
+      document
+        .getElementById("services")
+        .scrollIntoView({ behavior: "smooth" });
+    }, 500);
   };
   const toTeam = () => {
-    document.getElementById("team").scrollIntoView({ behavior: "smooth" });
+    setTimeout(() => {
+      document.getElementById("team").scrollIntoView({ behavior: "smooth" });
+    }, 500);
   };
 
   return (
@@ -143,39 +151,47 @@ export default function Nav() {
         >
           <ul className="flex flex-col gap-x-8 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium ">
             <li>
-              <button
-                className="block py-2 pr-4 pl-3  md:p-0 text-sm text-slate-100 focus:text-white w-full border-b-2 border-b-red-500 focus:border-b-white hover:border-b-red-200 font-bold"
-                onClick={toHome}
-              >
-                Home
-              </button>
+              <Link to={"/"}>
+                <button
+                  className="block py-2 pr-4 pl-3  md:p-0 text-sm text-slate-100 focus:text-white w-full border-b-2 border-b-red-500 focus:border-b-white hover:border-b-red-200 font-bold"
+                  onClick={toHome}
+                >
+                  Home
+                </button>
+              </Link>
             </li>
 
             <li>
-              <button
-                className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-100 focus:text-white w-full border-b-2 border-b-red-500 focus:border-b-white hover:border-b-red-200 font-bold"
-                onClick={toAbout}
-              >
-                About
-              </button>
+              <Link to={"/"}>
+                <button
+                  className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-100 focus:text-white w-full border-b-2 border-b-red-500 focus:border-b-white hover:border-b-red-200 font-bold"
+                  onClick={toAbout}
+                >
+                  About
+                </button>
+              </Link>
             </li>
 
             <li>
-              <button
-                className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-100 focus:text-white w-full border-b-2 border-b-red-500 focus:border-b-white hover:border-b-red-200 font-bold"
-                onClick={toServices}
-              >
-                Services
-              </button>
+              <Link to={"/"}>
+                <button
+                  className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-100 focus:text-white w-full border-b-2 border-b-red-500 focus:border-b-white hover:border-b-red-200 font-bold"
+                  onClick={toServices}
+                >
+                  Services
+                </button>
+              </Link>
             </li>
 
             <li>
-              <button
-                className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-100 focus:text-white w-full border-b-2 border-b-red-500 focus:border-b-white hover:border-b-red-200 font-bold"
-                onClick={toTeam}
-              >
-                Our Team
-              </button>
+              <Link to={"/"}>
+                <button
+                  className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-100 focus:text-white w-full border-b-2 border-b-red-500 focus:border-b-white hover:border-b-red-200 font-bold"
+                  onClick={toTeam}
+                >
+                  Our Team
+                </button>
+              </Link>
             </li>
 
             <li>

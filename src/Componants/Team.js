@@ -85,7 +85,7 @@ export default function Team() {
 
         <motion.div className="col-span-3 flex flex-row flex-wrap gap-x-10 ">
           <motion.div className="w-[90%] md:w-[20%] 2xl:w[15%] text-center">
-            <div className="w-full h-32 2xl:h-48 bg-slate-500 rounded-lg"></div>
+            <div className="w-full h-40 2xl:h-48 bg-slate-500 rounded-lg"></div>
             <p className="text-lg font-semibold text-slate-700">Name</p>
             <p className="text-base text-slate-600">Position</p>
           </motion.div>
