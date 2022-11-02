@@ -1,17 +1,18 @@
 import infinity from "../static/images/Infinity.png";
 import dots from "../static/images/dots.png";
-import iso from "../static/images/iso.png";
-import { useState } from "react";
+import office from "../static/images/office.svg";
+
 import { motion } from "framer-motion";
 
 export default function About() {
   const springYVariants = {
     offscreen: {
       y: 200,
+      opacity: 0,
     },
     onscreen: {
       y: 0,
-      rotate: 0,
+      opacity: 1,
       transition: {
         type: "spring",
         bounce: 0.4,
@@ -23,10 +24,11 @@ export default function About() {
   const springXVariants = {
     offscreen: {
       x: 200,
+      opacity: 0,
     },
     onscreen: {
       x: 0,
-      rotate: 0,
+      opacity: 1,
       transition: {
         type: "spring",
         bounce: 0.4,
@@ -38,10 +40,11 @@ export default function About() {
   const springXRVariants = {
     offscreen: {
       x: -200,
+      opacity: 0,
     },
     onscreen: {
       x: 0,
-      rotate: 0,
+      opacity: 1,
       transition: {
         type: "spring",
         bounce: 0.4,
@@ -65,21 +68,24 @@ export default function About() {
         </div>
 
         <motion.div
-          className="flex flex-row items-center justify-center ml-16 z-10"
+          className="flex flex-row items-center justify-center ml-32 z-10"
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: false, amount: 0.8 }}
         >
           <motion.div variants={springXRVariants}>
             <img className="w-36 " src={dots} alt="infinit insurance " />
           </motion.div>
           <motion.div
             variants={springXVariants}
-            className="text-md text-slate-500 font-semibold ml-4 w-[38%] "
+            className="text-md text-slate-500 font-semibold ml-4 w-[50%] "
           >
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, sum
+            Our Mission Is to secure the future of our customers by providing
+            high professional level of services.
+            <br />
+            Our Vision Is to be the first choice of insurance providers in Iraq
+            by being innovative, being financially strong, and exceeding
+            customer expectations.
           </motion.div>
         </motion.div>
 
@@ -87,22 +93,22 @@ export default function About() {
           className="flex flex-row items-center justify-center ml-16 relative z-0"
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: false, amount: 0.8 }}
         >
-          <img className="w-[35%] -mt-14" src={iso} alt="infinit insurance" />
+          <img className="w-[40%] mt-14" src={office} alt="infinit insurance" />
           <motion.div
             variants={springYVariants}
             className="text-md text-slate-500 font-semibold ml-16 pr-16 w-[55%]"
           >
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum
+            Trust House Insurance Company (Dar Al Theqa Insurance Company) a
+            private shareholding, was founded by Iraqi insurance men whom worked
+            long years outside Iraq, Trust Group, and businessmen in Iraq The
+            company was registered in Baghdad on 30 09 2009 with a fully paid
+            share capital of IQD 5 000 000 000 in compliance with the Insurance
+            Diwan Order concerning insurance companies’ capital The company was
+            granted license to carry out insurance activities by the Insurance
+            Diwan on 15 03 2010 (License 21 of 2010 We have also granted our
+            license in Kurdistan on 29 03 2017 (no 1161).
           </motion.div>
         </motion.div>
       </div>

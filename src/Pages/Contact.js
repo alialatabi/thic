@@ -1,6 +1,3 @@
-import { motion } from "framer-motion";
-import { useLocation } from "react-router";
-
 export default function Contact() {
   return (
     <div className=" mt-36 mx-auto w-[65%] ">

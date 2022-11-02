@@ -1,4 +1,3 @@
-import { useState } from "react";
 import blgs from "../static/images/landing/blgs.png";
 import blgsbg from "../static/images/landing/blgsbg.png";
 export default function Landing() {
@@ -10,23 +9,15 @@ export default function Landing() {
       <div className="lg:w-[75%] sliding-animate-rtl ">
         <div className="lg:max-w-lg">
           <h1
-            className="text-2xl font-bold tracking-wide text-gray-800 lg:text-5xl -mt-[40%] w-full"
+            className="text-4xl font-bold tracking-wide text-gray-800 lg:text-5xl -mt-[40%] w-full"
             id="home"
           >
-            Trust House Insurance
+            Trust House
           </h1>
 
           <div className="mt-8 space-y-5">
-            <p className="flex items-center -mx-2 text-slate-500 font-semibold">
-              <span className="mx-2">
-                Dar Al Theqa Insurance Company (Trust House Insurance company) a
-                private shareholding was founded by Iraqi insurance men whom
-                worked long years outside Iraq, Trust Group and businessmen in
-                Iraq. The company was registered in Baghdad on 30/09/2009 with a
-                fully paid share capital of IQD 1,012,000,000 increased in March
-                2014 to IQD 5,000,000,000 in compliance with the Insurance Diwan
-                Order concerning insurance companies’ capital.
-              </span>
+            <p className="flex items-center -mx-2 text-slate-500 font-semibold text-5xl">
+              <span className="mx-2">Your First Choice</span>
             </p>
             <button
               className="text-white bg-gray-700 hover:bg-blue-600 font-medium rounded-lg text-sm px-5 py-2.5 text-center md:mr-0 "
