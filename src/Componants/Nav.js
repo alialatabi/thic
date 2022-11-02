@@ -79,33 +79,8 @@ export default function Nav() {
   };
 
   return (
-    <nav className="w-full z-50 top-0 left-0 ">
-      <motion.div
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ once: true, amount: 1.0 }}
-      >
-        <motion.img
-          src={w1}
-          className="w-full relative z-20 "
-          alt=""
-          variants={springYVariants}
-        />
-        <motion.img
-          src={w2}
-          className="w-full relative z-10 -mt-[9%]"
-          alt=""
-          variants={springYVariants1}
-        />
-        <motion.img
-          src={w3}
-          className="w-full relative z-0 -mt-[11.5%] "
-          alt=""
-          variants={springYVariants2}
-        />
-      </motion.div>
-
-      <div className="container flex flex-wrap justify-between items-center lg:w-[80%] mx-auto relative z-30 -mt-[12%] ">
+    <nav className="w-full z-50 mt-10 ">
+      <div className="container flex flex-wrap justify-between items-center lg:w-[80%] mx-auto relative z-30  ">
         <Link to={"/"} className="flex items-center">
           <img
             src={logo}
@@ -117,7 +92,7 @@ export default function Nav() {
         <div className="flex md:order-2">
           <button
             type="button"
-            className="text-white bg-blue-600 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
+            className="text-white bg-[#0A479B] hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
           >
             Get Qoute
           </button>
