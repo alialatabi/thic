@@ -60,15 +60,10 @@ export default function About() {
           <p className="text-2xl text-slate-800 font-semibold mt-8" id="about">
             About Us
           </p>
-          <img
-            className="absolute right-0 w-36"
-            src={infinity}
-            alt="infinit insurance"
-          />
         </div>
 
         <motion.div
-          className="flex flex-row items-center justify-center ml-32 z-10"
+          className="flex flex-row items-center justify-center ml-32 z-10 text-slate-700"
           initial="offscreen"
           whileInView="onscreen"
           viewport={{ once: false, amount: 0.8 }}
@@ -78,7 +73,7 @@ export default function About() {
           </motion.div>
           <motion.div
             variants={springXVariants}
-            className="text-md text-slate-500 font-semibold ml-4 w-[50%] "
+            className="text-md font-semibold ml-4 w-[50%] "
           >
             Our Mission Is to secure the future of our customers by providing
             high professional level of services.
@@ -90,7 +85,7 @@ export default function About() {
         </motion.div>
 
         <motion.div
-          className="flex flex-row items-center justify-center ml-16 relative z-0"
+          className="flex flex-row items-center justify-center ml-16 relative z-0 text-slate-700"
           initial="offscreen"
           whileInView="onscreen"
           viewport={{ once: false, amount: 0.8 }}
@@ -98,7 +93,7 @@ export default function About() {
           <img className="w-[40%] mt-14" src={office} alt="infinit insurance" />
           <motion.div
             variants={springYVariants}
-            className="text-md text-slate-500 font-semibold ml-16 pr-16 w-[55%]"
+            className="text-md  font-semibold ml-16 pr-16 w-[55%]"
           >
             Trust House Insurance Company (Dar Al Theqa Insurance Company) a
             private shareholding, was founded by Iraqi insurance men whom worked

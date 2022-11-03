@@ -1,4 +1,4 @@
-import logo from "../static/images/Logo.png";
+import logo from "../static/images/Logo3.png";
 import w1 from "../static/images/navwave1.svg";
 import w2 from "../static/images/navwave2.svg";
 import w3 from "../static/images/navwave3.svg";
@@ -52,9 +52,6 @@ export default function Nav() {
     },
   };
 
-  const location = useLocation();
-  const navigate = useNavigate();
-
   const toAbout = () => {
     setTimeout(() => {
       document.getElementById("about").scrollIntoView({ behavior: "smooth" });
@@ -79,12 +76,15 @@ export default function Nav() {
   };
 
   return (
-    <nav className="w-full z-50 mt-10 ">
+    <motion.nav
+      className="w-full z-50 mt-8 border-b-2 shadow-slate-200 shadow-lg"
+      variants={springYVariants}
+    >
       <div className="container flex flex-wrap justify-between items-center lg:w-[80%] mx-auto relative z-30  ">
         <Link to={"/"} className="flex items-center">
           <img
             src={logo}
-            className="w-24"
+            className="w-20"
             alt="trust house insurance company"
           />
         </Link>
@@ -94,7 +94,7 @@ export default function Nav() {
             type="button"
             className="text-white bg-[#0A479B] hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
           >
-            Get Qoute
+            Get Quote
           </button>
           <button
             data-collapse-toggle="navbar-sticky"
@@ -128,7 +128,7 @@ export default function Nav() {
             <li>
               <Link to={"/"}>
                 <button
-                  className="block py-2 pr-4 pl-3  md:p-0 text-sm text-slate-100 focus:text-white w-full border-b-2 border-b-red-500 focus:border-b-white hover:border-b-red-200 font-bold"
+                  className="block py-2 pr-4 pl-3  md:p-0 text-sm text-slate-700 focus:text-slate-500 w-full font-bold"
                   onClick={toHome}
                 >
                   Home
@@ -139,7 +139,7 @@ export default function Nav() {
             <li>
               <Link to={"/"}>
                 <button
-                  className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-100 focus:text-white w-full border-b-2 border-b-red-500 focus:border-b-white hover:border-b-red-200 font-bold"
+                  className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-700 focus:text-slate-500 w-full font-bold"
                   onClick={toAbout}
                 >
                   About
@@ -150,7 +150,7 @@ export default function Nav() {
             <li>
               <Link to={"/"}>
                 <button
-                  className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-100 focus:text-white w-full border-b-2 border-b-red-500 focus:border-b-white hover:border-b-red-200 font-bold"
+                  className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-700 focus:text-slate-500 w-full font-bold"
                   onClick={toServices}
                 >
                   Services
@@ -161,7 +161,7 @@ export default function Nav() {
             <li>
               <Link to={"/"}>
                 <button
-                  className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-100 focus:text-white w-full border-b-2 border-b-red-500 focus:border-b-white hover:border-b-red-200 font-bold"
+                  className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-700 focus:text-slate-500 w-full font-bold"
                   onClick={toTeam}
                 >
                   Our Team
@@ -171,7 +171,7 @@ export default function Nav() {
 
             <li>
               <Link to={"/Contact"}>
-                <button className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-100 focus:text-white w-full border-b-2 border-b-red-500 focus:border-b-white hover:border-b-red-200 font-bold">
+                <button className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-700 focus:text-slate-500 w-full font-bold">
                   Contact
                 </button>
               </Link>
@@ -179,6 +179,6 @@ export default function Nav() {
           </ul>
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 }
