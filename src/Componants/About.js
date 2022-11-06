@@ -54,7 +54,7 @@ export default function About() {
   };
 
   return (
-    <div className=" flex flex-col rounded-lg bg-[#F1F2F4] mt-2 px-6  space-y-6">
+    <div className=" flex flex-col rounded-lg bg-[#F1F2F4] mt-2 px-6 py-[9%] space-y-6">
       <div className="container mx-auto">
         <div className="flex flex-row">
           <p className="text-2xl text-slate-800 font-semibold mt-8" id="about">

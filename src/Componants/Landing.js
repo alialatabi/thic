@@ -5,7 +5,7 @@ export default function Landing() {
     document.getElementById("about").scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <div className="container mt-36 mb-[15%] flex flex-col px-6 py-10 mx-auto space-y-6 lg:py-16 lg:flex-row lg:items-center justify-center ">
+    <div className="container mt-36 mb-[7%] flex flex-col px-6 py-10 mx-auto space-y-6 lg:py-16 lg:flex-row lg:items-center justify-center ">
       <div className="sliding-animate-rtl w-[50%] ">
         <div className="space-y-5 ">
           <h1

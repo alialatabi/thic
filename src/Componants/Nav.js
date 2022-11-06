@@ -1,4 +1,4 @@
-import logo from "../static/images/Logo3.png";
+import logo from "../static/images/Logo4.png";
 import w1 from "../static/images/navwave1.svg";
 import w2 from "../static/images/navwave2.svg";
 import w3 from "../static/images/navwave3.svg";
@@ -59,7 +59,11 @@ export default function Nav() {
   };
   const toHome = () => {
     setTimeout(() => {
-      document.getElementById("home").scrollIntoView({ behavior: "smooth" });
+      document.body.scrollTop = 0;
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
     }, 500);
   };
   const toServices = () => {

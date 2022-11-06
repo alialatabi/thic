@@ -3,7 +3,7 @@ import ke from "../static/images/KE.png";
 import pc from "../static/images/pc.png";
 import yasra from "../static/images/yasra.png";
 import zain from "../static/images/zain.png";
-import eni from "../static/images/eni.svg";
+import iom from "../static/images/IOM.svg";
 
 export default function Partners() {
   return (
@@ -21,16 +21,7 @@ export default function Partners() {
                     href="#"
                     className="mx-4 flex w-[100px] items-center justify-center py-5 2xl:w-[100px]"
                   >
-                    <img src={shell} alt="image" className=" w-full" />
-                  </a>
-                </div>
-
-                <div className="flex-shrink-0">
-                  <a
-                    href="#"
-                    className="mx-4 flex w-[100px] items-center justify-center py-5 2xl:w-[150px]"
-                  >
-                    <img src={eni} alt="image" className=" w-full" />
+                    <img src={iom} alt="image" className=" w-full" />
                   </a>
                 </div>
 
