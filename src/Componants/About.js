@@ -1,4 +1,3 @@
-import infinity from "../static/images/Infinity.png";
 import dots from "../static/images/dots.png";
 import office from "../static/images/office.svg";
 
@@ -63,17 +62,20 @@ export default function About() {
         </div>
 
         <motion.div
-          className="flex flex-row items-center justify-center ml-32 z-10 text-slate-700"
+          className="flex flex-row items-center justify-center md:ml-32 z-10 text-slate-700"
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: false, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.8 }}
         >
-          <motion.div variants={springXRVariants}>
-            <img className="w-36 " src={dots} alt="infinit insurance " />
+          <motion.div
+            variants={springXRVariants}
+            className="md:w-36 hidden md:block"
+          >
+            <img className="" src={dots} alt="infinit insurance " />
           </motion.div>
           <motion.div
             variants={springXVariants}
-            className="text-md font-semibold ml-4 w-[50%] "
+            className="text-md font-semibold md:ml-4 w-full md:w-[50%] "
           >
             Our Mission Is to secure the future of our customers by providing
             high professional level of services.
@@ -85,15 +87,19 @@ export default function About() {
         </motion.div>
 
         <motion.div
-          className="flex flex-row items-center justify-center ml-16 relative z-0 text-slate-700"
+          className="flex flex-col md:flex-row items-center justify-center mt-10 md:ml-16 relative z-0 text-slate-700 space-y-6"
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: false, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.8 }}
         >
-          <img className="w-[40%] mt-14" src={office} alt="infinit insurance" />
+          <img
+            className="w-full md:w-[40%] mt-14"
+            src={office}
+            alt="infinit insurance"
+          />
           <motion.div
             variants={springYVariants}
-            className="text-md  font-semibold ml-16 pr-16 w-[55%]"
+            className="text-md  font-semibold md:ml-16 pr-16 w-full md:w-[55%]"
           >
             Trust House Insurance Company (Dar Al Theqa Insurance Company) a
             private shareholding, was founded by Iraqi insurance men whom worked

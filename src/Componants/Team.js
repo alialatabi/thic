@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
 import target from "../static/images/target.png";
+import wamidh from "../static/images/wamidh.png";
+import mustafa from "../static/images/mustafa.png";
+import basma from "../static/images/basma.png";
 
 export default function Team() {
   const springYVariants = {
@@ -74,13 +77,19 @@ export default function Team() {
         whileInView="onscreen"
         viewport={{ once: true, amount: 1.0 }}
       >
-        <motion.div className="col-span-1 flex flex-col gap-10 w-[75%]">
+        <motion.div className="col-span-1 flex flex-col gap-10 w-[75%] hidden md:block">
           <img src={target} alt="target" className="w-[75%] mx-auto" />
         </motion.div>
 
         <motion.div className="col-span-3 flex flex-row flex-wrap gap-x-10 ">
           <motion.div className="w-[90%] md:w-[20%] 2xl:w[15%] text-center">
-            <div className="w-full h-40 2xl:h-48 bg-slate-500 rounded-lg"></div>
+            <div className="w-full h-40 2xl:h-48  rounded-lg ">
+              <img
+                src={wamidh}
+                className=" h-40 2xl:h-48 mx-auto"
+                alt="wamidh"
+              />
+            </div>
             <p className="text-lg font-semibold text-slate-700">
               Wamidh Aljarrah
             </p>
@@ -88,7 +97,7 @@ export default function Team() {
           </motion.div>
 
           <motion.div className="w-[90%] md:w-[20%] 2xl:w[15%] text-center">
-            <div className="w-full h-40 2xl:h-48 bg-slate-500 rounded-lg"></div>
+            <div className="w-full h-40 2xl:h-48 bg-slate-100 rounded-lg "></div>
             <p className="text-lg font-semibold text-slate-700">
               Shamal Shawket
             </p>
@@ -98,19 +107,31 @@ export default function Team() {
           </motion.div>
 
           <motion.div className="w-[90%] md:w-[20%] 2xl:w[15%] text-center">
-            <div className="w-full h-40 2xl:h-48 bg-slate-500 rounded-lg"></div>
+            <div className="w-full h-40 2xl:h-48 rounded-lg ">
+              <img
+                src={mustafa}
+                className=" h-40 2xl:h-48 mx-auto"
+                alt="mustafa"
+              />
+            </div>
             <p className="text-lg font-semibold text-slate-700">Mustafa Alaa</p>
             <p className="text-base text-slate-600">Technical Manager</p>
           </motion.div>
 
           <motion.div className="w-[90%] md:w-[20%] 2xl:w[15%] text-center">
-            <div className="w-full h-40 2xl:h-48 bg-slate-500 rounded-lg"></div>
+            <div className="w-full h-40 2xl:h-48  rounded-lg">
+              <img
+                src={basma}
+                className=" h-40 2xl:h-48 mx-auto"
+                alt="mustafa"
+              />
+            </div>
             <p className="text-lg font-semibold text-slate-700">Basma Ahmed</p>
             <p className="text-base text-slate-600">Technical Manager</p>
           </motion.div>
 
           <motion.div className="w-[90%] md:w-[20%] 2xl:w[15%] text-center">
-            <div className="w-full h-40 2xl:h-48 bg-slate-500 rounded-lg"></div>
+            <div className="w-full h-40 2xl:h-48 bg-slate-100 rounded-lg"></div>
             <p className="text-lg font-semibold text-slate-700">Ali Mahmood</p>
             <p className="text-base text-slate-600">Basra Branch Manager</p>
           </motion.div>

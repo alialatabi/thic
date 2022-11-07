@@ -8,76 +8,10 @@ import personal from "../static/images/personal.png";
 import { Link } from "react-router-dom";
 
 export default function Services() {
-  //   const springYVariants = {
-  //     offscreen: {
-  //       y: 0,
-  //       opacity: 0,
-  //     },
-  //     onscreen: {
-  //       y: 0,
-  //       opacity: 1,
-  //       transition: {
-  //         type: "spring",
-  //         bounce: 0.3,
-  //         duration: 1.8,
-  //       },
-  //     },
-  //   };
-  //   const springYRVariants = {
-  //     offscreen: {
-  //       y: -200,
-  //       opacity: 0,
-  //     },
-  //     onscreen: {
-  //       y: 0,
-  //       opacity: 1,
-  //       transition: {
-  //         type: "spring",
-  //         bounce: 0.3,
-  //         duration: 1.8,
-  //       },
-  //     },
-  //   };
-
-  //   const springXVariants = {
-  //     offscreen: {
-  //       x: 200,
-  //       opacity: 0,
-  //     },
-  //     onscreen: {
-  //       x: 0,
-  //       opacity: 1,
-  //       transition: {
-  //         type: "spring",
-  //         bounce: 0.3,
-  //         duration: 1.8,
-  //       },
-  //     },
-  //   };
-
-  //   const springXRVariants = {
-  //     offscreen: {
-  //       x: -200,
-  //       opacity: 0,
-  //     },
-  //     onscreen: {
-  //       x: 0,
-  //       opacity: 1,
-  //       transition: {
-  //         type: "spring",
-  //         bounce: 0.3,
-  //         duration: 1.8,
-  //       },
-  //     },
-  //   };
-
   return (
     <motion.div
       className="bg-[#12567F] m-12 rounded-lg container mx-auto py-8 w-[90%]"
       id="services"
-      //   initial="offscreen"
-      //   whileInView="onscreen"
-      //   viewport={{ once: true, amount: 1.0 }}
     >
       <p className="ml-12 py-2 text-3xl font-semibold text-white">Services</p>
       <motion.div className="flex flex-col md:flex-row flex-wrap gap-y-10 gap-x-1 py-4">
@@ -86,7 +20,11 @@ export default function Services() {
           className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg p-8 grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
         >
           <motion.div>
-            <img src={ship} alt="Marine Insurance" className="mx-auto mb-3 " />
+            <img
+              src={ship}
+              alt="Marine Insurance"
+              className="mx-auto mb-3 w-[40%]"
+            />
             <p className="text-xl font-bold text-slate-700">Marine Insurance</p>
             <p className="text-base text-slate-600 ">
               Lorem Ipsum is simply dummy text including versions of Lorem Ipsum
@@ -102,7 +40,7 @@ export default function Services() {
             <img
               src={health}
               alt="Medical Insurance"
-              className="mx-auto mb-3"
+              className="mx-auto mb-3 w-[40%]"
             />
             <p className="text-xl font-bold text-slate-700">
               Medical Insurance
@@ -117,7 +55,11 @@ export default function Services() {
           className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg  p-8 grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
         >
           <motion.div>
-            <img src={fire} alt="Fire Insurance" className="mx-auto mb-3" />
+            <img
+              src={fire}
+              alt="Fire Insurance"
+              className="mx-auto mb-3 w-[40%]"
+            />
             <p className="text-xl font-bold text-slate-700">Fire Insurance</p>
             <p className="text-base text-slate-600 ">
               Lorem Ipsum is simply dummy text including versions of Lorem Ipsum
@@ -130,7 +72,11 @@ export default function Services() {
           className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg  p-8 grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
         >
           <motion.div>
-            <img src={motor} alt="Motor Insurance" className="mx-auto mb-3" />
+            <img
+              src={motor}
+              alt="Motor Insurance"
+              className="mx-auto mb-3 w-[40%]"
+            />
             <p className="text-xl font-bold text-slate-700">Motor Insurance</p>
             <p className="text-base text-slate-600 ">
               Lorem Ipsum is simply dummy text including versions of Lorem Ipsum
@@ -146,7 +92,7 @@ export default function Services() {
             <img
               src={eng}
               alt="Engineering Insurance"
-              className="mx-auto mb-3"
+              className="mx-auto mb-3 w-[40%]"
             />
             <p className="text-xl font-bold text-slate-700">
               Engineering Insurance
@@ -165,7 +111,7 @@ export default function Services() {
             <img
               src={personal}
               alt="Personal Insurance"
-              className="mx-auto mb-3"
+              className="mx-auto mb-3 w-[40%]"
             />
             <p className="text-xl font-bold text-slate-700">
               Personal Insurance

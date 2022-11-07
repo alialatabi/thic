@@ -51,7 +51,7 @@ code {
     }
 }
 
-@keyframes scaling {
+/* @keyframes scaling {
     from {
         scale: 75%;
     }
@@ -77,7 +77,7 @@ code {
 }
 .scalling-animate50 {
     animation-name: scaling2;
-    animation-duration: 3s;
+    animation-duration: 2.5s;
     animation-timing-function: ease-out;
 }
 
@@ -111,7 +111,7 @@ code {
     animation-name: sliding-in2;
     animation-duration: 2.5s;
     animation-timing-function: ease-out;
-}
+} */
 
 .touch{
 -webkit-overflow-scrolling: touch;

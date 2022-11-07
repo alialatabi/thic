@@ -1,9 +1,7 @@
-import logo from "../static/images/Logo4.png";
-import w1 from "../static/images/navwave1.svg";
-import w2 from "../static/images/navwave2.svg";
-import w3 from "../static/images/navwave3.svg";
+import logo from "../static/images/Logo3.png";
+
 import { motion } from "framer-motion";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Nav() {
   const springYVariants = {
@@ -16,38 +14,8 @@ export default function Nav() {
       opacity: 1,
       transition: {
         type: "spring",
-        bounce: 0.0,
-        duration: 3.5,
-      },
-    },
-  };
-  const springYVariants1 = {
-    offscreen: {
-      y: -200,
-      opacity: 1,
-    },
-    onscreen: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        bounce: 0.0,
+        bounce: 0.5,
         duration: 2.5,
-      },
-    },
-  };
-  const springYVariants2 = {
-    offscreen: {
-      y: -200,
-      opacity: 1,
-    },
-    onscreen: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        bounce: 0.0,
-        duration: 1.5,
       },
     },
   };
@@ -82,9 +50,14 @@ export default function Nav() {
   return (
     <motion.nav
       className="w-full z-50 mt-8 border-b-2 shadow-slate-200 shadow-lg"
-      variants={springYVariants}
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true, amount: 0.8 }}
     >
-      <div className="container flex flex-wrap justify-between items-center lg:w-[80%] mx-auto relative z-30  ">
+      <motion.div
+        variants={springYVariants}
+        className="container flex flex-wrap justify-between items-center lg:w-[80%] mx-auto relative z-30  "
+      >
         <Link to={"/"} className="flex items-center">
           <img
             src={logo}
@@ -182,7 +155,7 @@ export default function Nav() {
             </li>
           </ul>
         </div>
-      </div>
+      </motion.div>
     </motion.nav>
   );
 }
