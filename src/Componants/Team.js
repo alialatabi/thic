@@ -77,11 +77,11 @@ export default function Team() {
         whileInView="onscreen"
         viewport={{ once: true, amount: 1.0 }}
       >
-        <motion.div className="col-span-1 flex flex-col gap-10 w-[75%] hidden md:block">
+        {/* <motion.div className="col-span-1 flex flex-col gap-10 w-[75%] hidden md:block">
           <img src={target} alt="target" className="w-[75%] mx-auto" />
-        </motion.div>
+        </motion.div> */}
 
-        <motion.div className="col-span-3 flex flex-row flex-wrap gap-x-10 ">
+        <motion.div className="col-span-4 flex flex-row flex-wrap xl:flex-nowrap gap-x-10 ">
           <motion.div className="w-[90%] md:w-[20%] 2xl:w[15%] text-center">
             <div className="w-full h-40 2xl:h-48  rounded-lg ">
               <img

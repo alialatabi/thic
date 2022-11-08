@@ -37,34 +37,42 @@ export default function Contact() {
         </thead>
         <tbody className="text-xs text-gray-700 bg-gray-100 ">
           <tr>
-            <th scope="row" className="py-4 px-4 font-bold hover:bg-gray-300">
+            <th
+              scope="row"
+              className="py-4 px-4 font-bold hover:bg-gray-300 w-[33.33%]"
+            >
               <button
                 onClick={() => {
                   bgMap();
                 }}
               >
-                Hay Al Muthanna 714 – 33 – 16/1 Baghdad – Iraq Tel : +964
-                7827893848 @ : info@trustiraq.com
+                Hay Al Muthanna 714 / 25 / 1 (Hamadany Bldg) ,2nd Floor
+                <br />
+                Baghdad – Iraq <br />
+                Tel : +964 7827893848 <br />@ : info@trustiraq.com
               </button>
             </th>
-            <th className="py-4 px-4 font-bold hover:bg-gray-300">
+            <th className="py-4 px-4 font-bold hover:bg-gray-300 w-[33.33%]">
               <button
                 onClick={() => {
                   erMap();
                 }}
               >
-                Lebanese Village – Building B4 – Apartment 7 Erbil – Iraq +964
-                7710119058
+                Lebanese Village – Building B4 – Apartment 7 <br />
+                Erbil – Iraq <br />
+                Tel : +964 7710119058 <br />@ : info@trustiraq.com
               </button>
             </th>
-            <th className="py-4 px-4 font-bold hover:bg-gray-300">
+            <th className="py-4 px-4 font-bold hover:bg-gray-300 w-[33.33%]">
               <button
                 onClick={() => {
                   bsMap();
                 }}
               >
-                Al-Saady St. - Modern Medical Center building – 3rd Floor Basra
-                – Iraq +964 772 493 7300
+                Al-Saady St. - Modern Medical Center building – 3rd Floor <br />
+                Basra – Iraq <br />
+                Tel : +964 772 493 7300
+                <br />@ : info@trustiraq.com
               </button>
             </th>
           </tr>
