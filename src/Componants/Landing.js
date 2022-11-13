@@ -57,12 +57,12 @@ export default function Landing() {
           <p className="flex items-center font-bold text-5xl text-[#0A479B] w">
             Your First Choice
           </p>
-          <button
+          {/* <button
             className="hidden md:block text-white bg-gray-700 hover:bg-blue-600 font-medium rounded-lg text-sm px-5 py-2.5 text-center md:mr-0 "
             onClick={toAbout}
           >
             See More
-          </button>
+          </button> */}
         </motion.div>
       </div>
 
