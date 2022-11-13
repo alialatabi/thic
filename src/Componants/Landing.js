@@ -43,7 +43,7 @@ export default function Landing() {
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.8 }}
-      className="container text-center md:text-left md:mt-36  md:mb-[7%] mb-[14.5%]  flex flex-col px-6 py-10 mx-auto space-y-6 lg:py-16 lg:flex-row lg:items-center justify-center "
+      className="container text-center md:text-left md:mt-36  md:mb-[4.5%] mb-[14.5%]  flex flex-col px-6 py-10 mx-auto space-y-6 lg:py-16 lg:flex-row lg:items-center justify-center "
     >
       <div className="w-full mb-28 md:w-[50%] ">
         <motion.div className="space-y-5 " variants={springXVariants}>
