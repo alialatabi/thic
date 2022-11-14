@@ -17,7 +17,7 @@ export default function Services() {
       <motion.div className="flex flex-col md:flex-row flex-wrap gap-y-10 gap-x-1 py-4">
         <Link
           to={"/Service/Marine"}
-          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg p-8 grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
+          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg p-8 md:grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
         >
           <motion.div>
             <img
@@ -34,7 +34,7 @@ export default function Services() {
 
         <Link
           to={"/Service/Medical"}
-          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg  p-8 grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
+          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg  p-8 md:grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
         >
           <motion.div>
             <img
@@ -52,7 +52,7 @@ export default function Services() {
         </Link>
         <Link
           to={"/Service/Fire"}
-          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg  p-8 grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
+          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg  p-8 md:grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
         >
           <motion.div>
             <img
@@ -69,7 +69,7 @@ export default function Services() {
 
         <Link
           to={"/Service/Motor"}
-          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg  p-8 grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
+          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg  p-8 md:grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
         >
           <motion.div>
             <img
@@ -86,7 +86,7 @@ export default function Services() {
 
         <Link
           to={"/Service/Engineering"}
-          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg  p-8 grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
+          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg  p-8 md:grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
         >
           <motion.div>
             <img
@@ -105,7 +105,7 @@ export default function Services() {
 
         <Link
           to={"/Service/Personal"}
-          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg  p-8 grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
+          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg  p-8 md:grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
         >
           <motion.div>
             <img

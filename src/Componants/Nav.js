@@ -2,6 +2,7 @@ import logo from "../static/images/Logo3.png";
 
 import { motion } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
+import { useState } from "react";
 
 export default function Nav() {
   const springYVariants = {
@@ -47,6 +48,8 @@ export default function Nav() {
     }, 500);
   };
 
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
   return (
     <motion.nav
       className="w-full z-50 mt-8 border-b-2 shadow-slate-200 shadow-lg"
@@ -79,6 +82,9 @@ export default function Nav() {
             className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-sticky"
             aria-expanded="false"
+            onClick={() => {
+              setIsNavOpen((prev) => !prev);
+            }}
           >
             <span className="sr-only">Open main menu</span>
             <svg
@@ -98,8 +104,13 @@ export default function Nav() {
         </div>
 
         <div
-          className="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
+          className={
+            isNavOpen === true
+              ? "block justify-between items-center w-full md:flex md:w-auto md:order-1 "
+              : "hidden justify-between items-center w-full md:flex md:w-auto md:order-1 "
+          }
           id="navbar-sticky"
+          onClick={() => setIsNavOpen(false)}
         >
           <ul className="flex flex-col gap-x-8 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium ">
             <li>
