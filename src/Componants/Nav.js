@@ -1,4 +1,4 @@
-import logo from "../static/images/Logo3.png";
+import logo from "../static/images/Logo.png";
 
 import { motion } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";

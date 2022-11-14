@@ -1,5 +1,6 @@
 {
   "name": "thic",
+  "homepage": "http://www.trustiraq.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
