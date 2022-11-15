@@ -1,7 +1,7 @@
 import logo from "../static/images/Logo.png";
 
 import { motion } from "framer-motion";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 export default function Nav() {

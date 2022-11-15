@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 export default function Services() {
   return (
     <motion.div
-      className="bg-[#12567F] m-12 rounded-lg container mx-auto py-8 w-[90%]"
+      className="bg-[#0A479B] m-12 rounded-lg container mx-auto py-8 w-[90%]"
       id="services"
     >
       <p className="ml-12 py-2 text-3xl font-semibold text-white">Services</p>

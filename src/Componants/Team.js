@@ -1,44 +1,14 @@
 import { motion } from "framer-motion";
-import target from "../static/images/target.png";
+
 import wamidh from "../static/images/wamidh.png";
 import mustafa from "../static/images/mustafa.png";
 import basma from "../static/images/basma.png";
+import shamal from "../static/images/shamal.png";
 
 export default function Team() {
-  const springYVariants = {
-    offscreen: {
-      y: 200,
-      opacity: 0,
-    },
-    onscreen: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        bounce: 0.6,
-        duration: 1.0,
-      },
-    },
-  };
-  const springYRVariants = {
-    offscreen: {
-      y: -200,
-      opacity: 0,
-    },
-    onscreen: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        bounce: 0.6,
-        duration: 1.0,
-      },
-    },
-  };
-
   const springXVariants = {
     offscreen: {
-      x: 200,
+      x: 700,
       opacity: 0,
     },
     onscreen: {
@@ -46,43 +16,26 @@ export default function Team() {
       opacity: 1,
       transition: {
         type: "spring",
-        bounce: 0.6,
-        duration: 1.0,
-      },
-    },
-  };
-
-  const springXRVariants = {
-    offscreen: {
-      x: -200,
-      opacity: 0,
-    },
-    onscreen: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        bounce: 0.6,
-        duration: 1.0,
+        bounce: 0.3,
+        duration: 2.0,
       },
     },
   };
 
   return (
-    <div id="team" className="container mx-auto">
+    <div id="team" className="container mx-auto ">
       <p className="ml-12 text-3xl font-semibold text-slate-700">Our Team</p>
-      <motion.div
-        className="grid grid-cols-4 m-12 gap-8"
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ once: true, amount: 1.0 }}
-      >
-        {/* <motion.div className="col-span-1 flex flex-col gap-10 w-[75%] hidden md:block">
-          <img src={target} alt="target" className="w-[75%] mx-auto" />
-        </motion.div> */}
-
-        <motion.div className="col-span-4 flex flex-row flex-wrap xl:flex-nowrap gap-x-10 ">
-          <motion.div className="w-[90%] md:w-[20%] 2xl:w[15%] text-center">
+      <motion.div className="grid grid-cols-4 m-12 gap-8">
+        <motion.div
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 1.0 }}
+          className="col-span-4 flex flex-row flex-wrap xl:flex-nowrap md:gap-x-10 gap-y-10 justify-center "
+        >
+          <motion.div
+            className="w-[90%] md:w-[20%] 2xl:w[15%] text-center"
+            variants={springXVariants}
+          >
             <div className="w-full h-40 2xl:h-48  rounded-lg ">
               <img
                 src={wamidh}
@@ -96,8 +49,17 @@ export default function Team() {
             <p className="text-base text-slate-600">Managing Director</p>
           </motion.div>
 
-          <motion.div className="w-[90%] md:w-[20%] 2xl:w[15%] text-center">
-            <div className="w-full h-40 2xl:h-48 bg-slate-100 rounded-lg "></div>
+          <motion.div
+            className="w-[90%] md:w-[20%] 2xl:w[15%] text-center"
+            variants={springXVariants}
+          >
+            <div className="w-full h-40 2xl:h-48  rounded-lg ">
+              <img
+                src={shamal}
+                className=" h-36 2xl:h-42 mx-auto"
+                alt="shamal"
+              />
+            </div>
             <p className="text-lg font-semibold text-slate-700">
               Shamal Shawket
             </p>
@@ -106,7 +68,10 @@ export default function Team() {
             </p>
           </motion.div>
 
-          <motion.div className="w-[90%] md:w-[20%] 2xl:w[15%] text-center">
+          <motion.div
+            className="w-[90%] md:w-[20%] 2xl:w[15%] text-center"
+            variants={springXVariants}
+          >
             <div className="w-full h-40 2xl:h-48 rounded-lg ">
               <img
                 src={mustafa}
@@ -118,7 +83,10 @@ export default function Team() {
             <p className="text-base text-slate-600">Technical Manager</p>
           </motion.div>
 
-          <motion.div className="w-[90%] md:w-[20%] 2xl:w[15%] text-center">
+          <motion.div
+            className="w-[90%] md:w-[20%] 2xl:w[15%] text-center"
+            variants={springXVariants}
+          >
             <div className="w-full h-40 2xl:h-48  rounded-lg">
               <img
                 src={basma}
@@ -130,7 +98,10 @@ export default function Team() {
             <p className="text-base text-slate-600">Technical Manager</p>
           </motion.div>
 
-          <motion.div className="w-[90%] md:w-[20%] 2xl:w[15%] text-center">
+          <motion.div
+            className="w-[90%] md:w-[20%] 2xl:w[15%] text-center"
+            variants={springXVariants}
+          >
             <div className="w-full h-40 2xl:h-48 bg-slate-100 rounded-lg"></div>
             <p className="text-lg font-semibold text-slate-700">Ali Mahmood</p>
             <p className="text-base text-slate-600">Basra Branch Manager</p>

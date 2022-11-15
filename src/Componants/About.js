@@ -69,20 +69,26 @@ export default function About() {
         >
           <motion.div
             variants={springXRVariants}
-            className="md:w-36 hidden md:block"
+            className="md:w-56  hidden md:block md:mt-8"
           >
-            <img className="" src={dots} alt="infinit insurance " />
+            <img className=" w-full" src={dots} alt="infinit insurance " />
           </motion.div>
           <motion.div
             variants={springXVariants}
-            className="text-md font-semibold md:ml-4 w-full md:w-[50%] "
+            className="text-md font-semibold md:ml-4 w-full md:w-[50%] md:mt-6"
           >
-            Our Mission Is to secure the future of our customers by providing
-            high professional level of services.
+            <h1 className="text-lg text-slate-800 font-bold">Our Mission</h1>
+            <h2 className="ml-5">
+              Is to secure the future of our customers by providing high
+              professional level of services.
+            </h2>
             <br />
-            Our Vision Is to be the first choice of insurance providers in Iraq
-            by being innovative, being financially strong, and exceeding
-            customer expectations.
+            <h1 className="text-lg text-slate-800 font-bold">Our Vision</h1>
+            <h2 className="ml-5">
+              Is to be the first choice of insurance providers in Iraq by being
+              innovative, being financially strong, and exceeding customer
+              expectations.
+            </h2>
           </motion.div>
         </motion.div>
 
