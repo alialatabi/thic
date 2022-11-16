@@ -52,7 +52,7 @@ export default function Nav() {
 
   return (
     <motion.nav
-      className="w-full z-50 mt-8 border-b-2 shadow-slate-200 shadow-lg"
+      className="w-full z-50 mt-2 border-b-2 shadow-slate-200 shadow-lg"
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.8 }}
@@ -64,22 +64,22 @@ export default function Nav() {
         <Link to={"/"} className="flex items-center">
           <img
             src={logo}
-            className="w-20"
+            className="w-20 m-5"
             alt="trust house insurance company"
           />
         </Link>
 
         <div className="flex md:order-2">
-          <button
+          {/* <button
             type="button"
             className="text-white bg-[#0A479B] hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
           >
             Get Quote
-          </button>
+          </button> */}
           <button
             data-collapse-toggle="navbar-sticky"
             type="button"
-            className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="inline-flex items-center p-2 text-sm mr-5 text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
             aria-controls="navbar-sticky"
             aria-expanded="false"
             onClick={() => {

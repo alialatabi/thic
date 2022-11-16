@@ -8,7 +8,7 @@ import shamal from "../static/images/shamal.png";
 export default function Team() {
   const springXVariants = {
     offscreen: {
-      x: 700,
+      x: 300,
       opacity: 0,
     },
     onscreen: {
@@ -34,7 +34,7 @@ export default function Team() {
         >
           <motion.div
             className="w-[90%] md:w-[20%] 2xl:w[15%] text-center"
-            variants={springXVariants}
+            // variants={springXVariants}
           >
             <div className="w-full h-40 2xl:h-48  rounded-lg ">
               <img
@@ -51,7 +51,7 @@ export default function Team() {
 
           <motion.div
             className="w-[90%] md:w-[20%] 2xl:w[15%] text-center"
-            variants={springXVariants}
+            // variants={springXVariants}
           >
             <div className="w-full h-40 2xl:h-48  rounded-lg ">
               <img
@@ -70,7 +70,7 @@ export default function Team() {
 
           <motion.div
             className="w-[90%] md:w-[20%] 2xl:w[15%] text-center"
-            variants={springXVariants}
+            // variants={springXVariants}
           >
             <div className="w-full h-40 2xl:h-48 rounded-lg ">
               <img
@@ -85,7 +85,7 @@ export default function Team() {
 
           <motion.div
             className="w-[90%] md:w-[20%] 2xl:w[15%] text-center"
-            variants={springXVariants}
+            // variants={springXVariants}
           >
             <div className="w-full h-40 2xl:h-48  rounded-lg">
               <img
@@ -100,7 +100,7 @@ export default function Team() {
 
           <motion.div
             className="w-[90%] md:w-[20%] 2xl:w[15%] text-center"
-            variants={springXVariants}
+            // variants={springXVariants}
           >
             <div className="w-full h-40 2xl:h-48 bg-slate-100 rounded-lg"></div>
             <p className="text-lg font-semibold text-slate-700">Ali Mahmood</p>
