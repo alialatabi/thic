@@ -9,7 +9,7 @@ export default function Partners() {
   return (
     <div id="partners" className="container mx-auto">
       <p className="ml-12 py-2 text-3xl font-semibold text-slate-700">
-        Our Major Clintes
+        Our Major Clients
       </p>
 
       <section className="bg-white py-20 lg:py-[20px]">
