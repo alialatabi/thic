@@ -5,7 +5,6 @@ export default function WithLayout(Componant) {
     <>
       <Nav />
       <Componant />
-      <Footer />
     </>
   );
 }

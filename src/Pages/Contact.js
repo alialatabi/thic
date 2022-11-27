@@ -23,59 +23,68 @@ export default function Contact() {
     <>
       <div className="hidden md:block mt-20 mx-auto w-[65%] ">
         <table className="w-full text-center text-sm text-gray-500 ">
-          <thead className="text-sm text-gray-700 uppercase bg-gray-300 ">
+          <thead className="text-sm text-gray-800 uppercase">
             <tr>
-              <th scope="col" className="py-3 px-6">
-                Baghdad
+              <th scope="col" className="py-1 px-2 ">
+                <div className="border-2  border-cyan-500 rounded-lg">
+                  Baghdad
+                </div>
               </th>
-              <th scope="col" className="py-3 px-6">
-                Erbil
+              <th scope="col" className="py-1 px-2">
+                <div className="border-2  border-rose-500 rounded-lg">
+                  Erbil
+                </div>
               </th>
-              <th scope="col" className="py-3 px-6">
-                Basra
+              <th scope="col" className="py-1 px-2">
+                <div className="border-2  border-amber-500 rounded-lg">
+                  Basra
+                </div>
               </th>
             </tr>
           </thead>
-          <tbody className="text-xs text-gray-700 bg-gray-100 ">
+          <tbody className="text-xs text-gray-700">
             <tr>
-              <th
-                scope="row"
-                className="py-4 px-4 font-bold hover:bg-gray-300 w-[33.33%]"
-              >
-                <button
-                  onClick={() => {
-                    bgMap();
-                  }}
-                >
-                  Hay Al Muthanna 714 / 25 / 1 (Hamadany Bldg) ,2nd Floor
-                  <br />
-                  Baghdad – Iraq <br />
-                  Tel : +964 7827893848 <br />@ : info@trustiraq.com
-                </button>
+              <th scope="row" className="py-1 px-2 font-bold ">
+                <div className="py-1 border-2  border-cyan-500 rounded-lg hover:bg-cyan-500 hover:text-white">
+                  <button
+                    onClick={() => {
+                      bgMap();
+                    }}
+                  >
+                    Hay Al Muthanna 714 / 25 / 1 (Hamadany Bldg) ,2nd Floor
+                    <br />
+                    Baghdad – Iraq <br />
+                    Tel : +964 7827893848 <br />@ : info@trustiraq.com
+                  </button>
+                </div>
               </th>
-              <th className="py-4 px-4 font-bold hover:bg-gray-300 w-[33.33%]">
-                <button
-                  onClick={() => {
-                    erMap();
-                  }}
-                >
-                  Lebanese Village – Building B4 – Apartment 7 <br />
-                  Erbil – Iraq <br />
-                  Tel : +964 7710119058 <br />@ : info@trustiraq.com
-                </button>
+              <th className="py-1 px-2 font-bold">
+                <div className="py-1 px-1 border-2  border-rose-500 rounded-lg hover:bg-rose-500 hover:text-white">
+                  <button
+                    onClick={() => {
+                      erMap();
+                    }}
+                  >
+                    Lebanese Village – Building B4 – Apartment 7 <br />
+                    Erbil – Iraq <br />
+                    Tel : +964 7710119058 <br />@ : info@trustiraq.com
+                  </button>
+                </div>
               </th>
-              <th className="py-4 px-4 font-bold hover:bg-gray-300 w-[33.33%]">
-                <button
-                  onClick={() => {
-                    bsMap();
-                  }}
-                >
-                  Al-Saady St. - Modern Medical Center building – 3rd Floor{" "}
-                  <br />
-                  Basra – Iraq <br />
-                  Tel : +964 772 493 7300
-                  <br />@ : info@trustiraq.com
-                </button>
+              <th className="py-1 px-2 font-bold">
+                <div className="py-1 border-2  border-amber-500 rounded-lg hover:bg-amber-500 hover:text-white">
+                  <button
+                    onClick={() => {
+                      bsMap();
+                    }}
+                  >
+                    Al-Saady St. - Modern Medical Center building – 3rd Floor{" "}
+                    <br />
+                    Basra – Iraq <br />
+                    Tel : +964 772 493 7300
+                    <br />@ : info@trustiraq.com
+                  </button>
+                </div>
               </th>
             </tr>
           </tbody>

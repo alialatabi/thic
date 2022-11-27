@@ -1,4 +1,4 @@
-import logo from "../static/images/Logo.png";
+import logo from "../static/images/TrustLogo.jpg";
 
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -15,7 +15,7 @@ export default function Nav() {
       opacity: 1,
       transition: {
         type: "spring",
-        bounce: 0.5,
+        bounce: 0.3,
         duration: 2.5,
       },
     },
@@ -52,24 +52,24 @@ export default function Nav() {
 
   return (
     <motion.nav
-      className="w-full z-50 mt-2 border-b-2 shadow-slate-200 shadow-lg"
+      className="w-full z-50 mt-2 border-b-2 shadow-slate-200 shadow-lg "
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.8 }}
     >
       <motion.div
         variants={springYVariants}
-        className="container flex flex-wrap justify-between items-center lg:w-[80%] mx-auto relative z-30  "
+        className="container flex flex-wrap justify-between items-center  mx-auto relative z-30  "
       >
         <Link to={"/"} className="flex items-center">
           <img
             src={logo}
-            className="w-20 m-5"
+            className="w-48 md:w-80 m-3 -mr-2"
             alt="trust house insurance company"
           />
         </Link>
-
-        <div className="flex md:order-2">
+        {/* <div className="text-gray-700">Trust House Insurance Company</div> */}
+        <div className="flex md:order-2 md:hidden">
           {/* <button
             type="button"
             className="text-white bg-[#0A479B] hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
@@ -102,7 +102,6 @@ export default function Nav() {
             </svg>
           </button>
         </div>
-
         <div
           className={
             isNavOpen === true
@@ -112,11 +111,11 @@ export default function Nav() {
           id="navbar-sticky"
           onClick={() => setIsNavOpen(false)}
         >
-          <ul className="flex flex-col gap-x-8 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium ">
-            <li>
+          <ul className="flex flex-col w-[75%] mx-auto md:w-full space-y-2 mt-4 md:flex-row md:space-y-0  md:space-x-6 md:mt-0 md:text-sm md:font-medium text-gray-800 ">
+            <li className=" border-2 border-[#0A479B] rounded-lg py-1 px-3 hover:bg-[#0A479B] hover:text-white">
               <Link to={"/"}>
                 <button
-                  className="block py-2 pr-4 pl-3  md:p-0 text-sm text-slate-700 focus:text-slate-500 w-full font-bold"
+                  className="block md:p-0 font-bold mx-auto"
                   onClick={toHome}
                 >
                   Home
@@ -124,10 +123,10 @@ export default function Nav() {
               </Link>
             </li>
 
-            <li>
+            <li className=" border-2 border-[#0A479B] rounded-lg py-1 px-3 hover:bg-[#0A479B] hover:text-white">
               <Link to={"/"}>
                 <button
-                  className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-700 focus:text-slate-500 w-full font-bold"
+                  className="block md:p-0 font-bold mx-auto"
                   onClick={toAbout}
                 >
                   About
@@ -135,10 +134,10 @@ export default function Nav() {
               </Link>
             </li>
 
-            <li>
+            <li className=" border-2 border-[#0A479B] rounded-lg py-1 px-3 hover:bg-[#0A479B] hover:text-white">
               <Link to={"/"}>
                 <button
-                  className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-700 focus:text-slate-500 w-full font-bold"
+                  className="block md:p-0 font-bold mx-auto"
                   onClick={toServices}
                 >
                   Services
@@ -146,10 +145,10 @@ export default function Nav() {
               </Link>
             </li>
 
-            <li>
+            <li className=" border-2 border-[#0A479B] rounded-lg py-1 px-3 hover:bg-[#0A479B] hover:text-white">
               <Link to={"/"}>
                 <button
-                  className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-700 focus:text-slate-500 w-full font-bold"
+                  className="block md:p-0 font-bold mx-auto"
                   onClick={toTeam}
                 >
                   Our Team
@@ -157,9 +156,9 @@ export default function Nav() {
               </Link>
             </li>
 
-            <li>
+            <li className=" border-2 border-[#0A479B] rounded-lg py-1 px-3 hover:bg-[#0A479B] hover:text-white">
               <Link to={"/Contact"}>
-                <button className="block py-2 pr-4 pl-3 md:p-0 text-sm text-slate-700 focus:text-slate-500 w-full font-bold">
+                <button className="block md:p-0 font-bold mx-auto">
                   Contact
                 </button>
               </Link>

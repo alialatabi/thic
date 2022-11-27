@@ -4,6 +4,7 @@ import wamidh from "../static/images/wamidh.png";
 import mustafa from "../static/images/mustafa.png";
 import basma from "../static/images/basma.png";
 import shamal from "../static/images/shamal.png";
+import ali from "../static/images/ali.png";
 
 export default function Team() {
   const springXVariants = {
@@ -102,7 +103,9 @@ export default function Team() {
             className="w-[90%] md:w-[20%] 2xl:w[15%] text-center"
             // variants={springXVariants}
           >
-            <div className="w-full h-40 2xl:h-48 bg-slate-100 rounded-lg"></div>
+            <div className="w-full h-40 2xl:h-48  rounded-lg">
+              <img src={ali} className=" h-40 2xl:h-48 mx-auto" alt="mustafa" />
+            </div>
             <p className="text-lg font-semibold text-slate-700">Ali Mahmood</p>
             <p className="text-base text-slate-600">Basra Branch Manager</p>
           </motion.div>
