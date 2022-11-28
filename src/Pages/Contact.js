@@ -45,7 +45,7 @@ export default function Contact() {
           <tbody className="text-xs text-gray-700">
             <tr>
               <th scope="row" className="py-1 px-2 font-bold ">
-                <div className="py-1 border-2  border-cyan-500 rounded-lg hover:bg-cyan-500 hover:text-white">
+                <div className="py-1 border-2  border-cyan-500 rounded-lg hover:bg-cyan-500 hover:text-white hover:scale-110 duration-200">
                   <button
                     onClick={() => {
                       bgMap();
@@ -59,7 +59,7 @@ export default function Contact() {
                 </div>
               </th>
               <th className="py-1 px-2 font-bold">
-                <div className="py-1 px-1 border-2  border-rose-500 rounded-lg hover:bg-rose-500 hover:text-white">
+                <div className="py-1 px-1 border-2  border-rose-500 rounded-lg hover:bg-rose-500 hover:text-white hover:scale-110 duration-200">
                   <button
                     onClick={() => {
                       erMap();
@@ -72,7 +72,7 @@ export default function Contact() {
                 </div>
               </th>
               <th className="py-1 px-2 font-bold">
-                <div className="py-1 border-2  border-amber-500 rounded-lg hover:bg-amber-500 hover:text-white">
+                <div className="py-1 border-2  border-amber-500 rounded-lg hover:bg-amber-500 hover:text-white hover:scale-110 duration-200">
                   <button
                     onClick={() => {
                       bsMap();
