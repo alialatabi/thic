@@ -32,8 +32,7 @@ export default function Searvic() {
   if (location.pathname === "/Service/Medical") {
     img = Medical;
     headLine = "Group Medical Insurance";
-    txt =
-      "An additional Group Benefit protecting your staff against Health impairment whether in-hospital or as an out-patient";
+    txt = "";
   }
   if (location.pathname === "/Service/Motor") {
     img = Motor;

@@ -17,7 +17,7 @@ export default function Services() {
       <motion.div className="flex flex-col md:flex-row flex-wrap gap-y-10 gap-x-1 py-4">
         <Link
           to={"/Service/Marine"}
-          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg p-8 md:grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
+          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg p-8 md:grayscale hover:bg-slate-100 hover:scale-110 duration-200 hover:grayscale-0 hover:shadow-2xl"
         >
           <motion.div>
             <img
@@ -26,15 +26,13 @@ export default function Services() {
               className="mx-auto mb-3 w-[40%]"
             />
             <p className="text-xl font-bold text-slate-700">Marine Insurance</p>
-            <p className="text-base text-slate-600 ">
-              Lorem Ipsum is simply dummy text including versions of Lorem Ipsum
-            </p>
+            <p className="text-base text-slate-600 "></p>
           </motion.div>
         </Link>
 
         <Link
           to={"/Service/Medical"}
-          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg  p-8 md:grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
+          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg  p-8 md:grayscale hover:bg-slate-100 hover:scale-110 duration-200 hover:grayscale-0 hover:shadow-2xl"
         >
           <motion.div>
             <img
@@ -45,14 +43,12 @@ export default function Services() {
             <p className="text-xl font-bold text-slate-700">
               Medical Insurance
             </p>
-            <p className="text-base text-slate-600 ">
-              Lorem Ipsum is simply dummy text including versions of Lorem Ipsum
-            </p>
+            <p className="text-base text-slate-600 "></p>
           </motion.div>
         </Link>
         <Link
           to={"/Service/Fire"}
-          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg  p-8 md:grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
+          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg  p-8 md:grayscale hover:bg-slate-100 hover:scale-110 duration-200 hover:grayscale-0 hover:shadow-2xl"
         >
           <motion.div>
             <img
@@ -61,15 +57,13 @@ export default function Services() {
               className="mx-auto mb-3 w-[40%]"
             />
             <p className="text-xl font-bold text-slate-700">Fire Insurance</p>
-            <p className="text-base text-slate-600 ">
-              Lorem Ipsum is simply dummy text including versions of Lorem Ipsum
-            </p>
+            <p className="text-base text-slate-600 "></p>
           </motion.div>
         </Link>
 
         <Link
           to={"/Service/Motor"}
-          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg  p-8 md:grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
+          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg  p-8 md:grayscale hover:bg-slate-100 hover:scale-110 duration-200 hover:grayscale-0 hover:shadow-2xl"
         >
           <motion.div>
             <img
@@ -78,15 +72,13 @@ export default function Services() {
               className="mx-auto mb-3 w-[40%]"
             />
             <p className="text-xl font-bold text-slate-700">Motor Insurance</p>
-            <p className="text-base text-slate-600 ">
-              Lorem Ipsum is simply dummy text including versions of Lorem Ipsum
-            </p>
+            <p className="text-base text-slate-600 "></p>
           </motion.div>
         </Link>
 
         <Link
           to={"/Service/Engineering"}
-          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg  p-8 md:grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
+          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg  p-8 md:grayscale hover:bg-slate-100 hover:scale-110 duration-200 hover:grayscale-0 hover:shadow-2xl"
         >
           <motion.div>
             <img
@@ -97,15 +89,13 @@ export default function Services() {
             <p className="text-xl font-bold text-slate-700">
               Engineering Insurance
             </p>
-            <p className="text-base text-slate-600 ">
-              Lorem Ipsum is simply dummy text including versions of Lorem Ipsum
-            </p>
+            <p className="text-base text-slate-600 "></p>
           </motion.div>
         </Link>
 
         <Link
           to={"/Service/Personal"}
-          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg  p-8 md:grayscale hover:bg-slate-100 hover:grayscale-0 hover:shadow-2xl"
+          className="text-center mx-auto w-[80%] md:w-[25%] bg-white rounded-lg  p-8 md:grayscale hover:bg-slate-100 hover:scale-110 duration-200 hover:grayscale-0 hover:shadow-2xl"
         >
           <motion.div>
             <img
@@ -116,9 +106,7 @@ export default function Services() {
             <p className="text-xl font-bold text-slate-700">
               Personal Insurance
             </p>
-            <p className="text-base text-slate-600 ">
-              Lorem Ipsum is simply dummy text including versions of Lorem Ipsum
-            </p>
+            <p className="text-base text-slate-600 "></p>
           </motion.div>
         </Link>
       </motion.div>
