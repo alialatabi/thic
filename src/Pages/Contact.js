@@ -53,8 +53,7 @@ export default function Contact() {
                   >
                     Hay Al Muthanna 714 / 25 / 1 (Hamadany Bldg) ,2nd Floor
                     <br />
-                    Baghdad – Iraq <br />
-                    Tel : +964 7827893848 <br />@ : info@trustiraq.com
+                    Baghdad – Iraq
                   </button>
                 </div>
               </th>
@@ -66,8 +65,7 @@ export default function Contact() {
                     }}
                   >
                     Lebanese Village – Building B4 – Apartment 7 <br />
-                    Erbil – Iraq <br />
-                    Tel : +964 7710119058 <br />@ : info@trustiraq.com
+                    Erbil – Iraq
                   </button>
                 </div>
               </th>
@@ -80,9 +78,7 @@ export default function Contact() {
                   >
                     Al-Saady St. - Modern Medical Center building – 3rd Floor{" "}
                     <br />
-                    Basra – Iraq <br />
-                    Tel : +964 772 493 7300
-                    <br />@ : info@trustiraq.com
+                    Basra – Iraq
                   </button>
                 </div>
               </th>
@@ -142,8 +138,7 @@ export default function Contact() {
               <th scope="row" className="py-2 px-2 font-bold w-[33.33%] ">
                 <div className="py-2 px-2 border-2 border-cyan-500 rounded-lg hover:bg-cyan-500 hover:text-white">
                   Hay Al Muthanna 714 / 25 / 1 (Hamadany Bldg) ,2nd Floor
-                  Baghdad – Iraq <br />
-                  Tel : +964 7827893848 <br />@ : info@trustiraq.com
+                  Baghdad – Iraq
                   <br />
                   <div className="mt-6 mb-6">
                     <iframe
@@ -176,8 +171,7 @@ export default function Contact() {
               <th scope="row" className="py-2 px-2 font-bold w-[33.33%] ">
                 <div className="py-2 px-2 border-2 border-rose-500 rounded-lg hover:bg-rose-500 hover:text-white">
                   Lebanese Village – Building B4 – Apartment 7 <br />
-                  Erbil – Iraq <br />
-                  Tel : +964 7710119058 <br />@ : info@trustiraq.com
+                  Erbil – Iraq
                   <br />
                   <div id="erbil" className="mt-6 mb-6">
                     <iframe
@@ -211,9 +205,7 @@ export default function Contact() {
                 <div className="py-2 px-2 border-2 border-amber-500 rounded-lg hover:bg-amber-500 hover:text-white">
                   Al-Saady St. - Modern Medical Center building – 3rd Floor{" "}
                   <br />
-                  Basra – Iraq <br />
-                  Tel : +964 772 493 7300
-                  <br />@ : info@trustiraq.com
+                  Basra – Iraq
                   <br />
                   <div id="basra" className="mt-6 mb-6">
                     <iframe
