@@ -53,7 +53,7 @@ export default function Searvic() {
       "We offer Personal Accident insurance, an annual protection round the clock 24 hours a day, 365 days a year against bodily injury temporary and total disability & death.    The indemnity limit for The protection is pre-agreed between our company and the client at internationally approved terms.";
   }
   return (
-    <div className="container mt-16 mb-16 mx-auto border-2 border-dotted border-[#0A479B] border-opacity-75 rounded-3xl">
+    <div className="container mt-16 mb-16 mx-auto border-2 border-dotted border-[#024A76] border-opacity-75 rounded-3xl">
       <motion.div
         className="flex flex-col md:flex-row gap-10 md:m-10"
         initial="offscreen"

@@ -72,7 +72,7 @@ export default function Nav() {
         <div className="flex md:order-2 md:hidden">
           {/* <button
             type="button"
-            className="text-white bg-[#0A479B] hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
+            className="text-white bg-[#024A76] hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
           >
             Get Quote
           </button> */}
@@ -112,7 +112,7 @@ export default function Nav() {
           onClick={() => setIsNavOpen(false)}
         >
           <ul className="flex flex-col w-[75%] mx-auto md:w-full space-y-2 mt-4 md:flex-row md:space-y-0  md:space-x-6 md:mt-0 md:text-sm md:font-medium text-gray-800 ">
-            <li className=" border-2 border-[#0A479B] rounded-lg py-1 px-3 hover:bg-[#0A479B]  hover:text-white hover:scale-110 duration-200">
+            <li className=" border-2 border-[#024A76] rounded-lg py-1 px-3 hover:bg-[#024A76]  hover:text-white hover:scale-110 duration-200">
               <Link to={"/"}>
                 <button
                   className="block md:p-0 font-bold mx-auto"
@@ -123,7 +123,7 @@ export default function Nav() {
               </Link>
             </li>
 
-            <li className=" border-2 border-[#0A479B] rounded-lg py-1 px-3 hover:bg-[#0A479B] hover:text-white hover:scale-110 duration-200">
+            <li className=" border-2 border-[#024A76] rounded-lg py-1 px-3 hover:bg-[#024A76] hover:text-white hover:scale-110 duration-200">
               <Link to={"/"}>
                 <button
                   className="block md:p-0 font-bold mx-auto"
@@ -134,7 +134,7 @@ export default function Nav() {
               </Link>
             </li>
 
-            <li className=" border-2 border-[#0A479B] rounded-lg py-1 px-3 hover:bg-[#0A479B] hover:text-white hover:scale-110 duration-200">
+            <li className=" border-2 border-[#024A76] rounded-lg py-1 px-3 hover:bg-[#024A76] hover:text-white hover:scale-110 duration-200">
               <Link to={"/"}>
                 <button
                   className="block md:p-0 font-bold mx-auto"
@@ -145,7 +145,7 @@ export default function Nav() {
               </Link>
             </li>
 
-            <li className=" border-2 border-[#0A479B] rounded-lg py-1 px-3 hover:bg-[#0A479B] hover:text-white hover:scale-110 duration-200">
+            <li className=" border-2 border-[#024A76] rounded-lg py-1 px-3 hover:bg-[#024A76] hover:text-white hover:scale-110 duration-200">
               <Link to={"/"}>
                 <button
                   className="block md:p-0 font-bold mx-auto"
@@ -156,7 +156,7 @@ export default function Nav() {
               </Link>
             </li>
 
-            <li className=" border-2 border-[#0A479B] rounded-lg py-1 px-3 hover:bg-[#0A479B]  hover:text-white hover:scale-110 duration-200">
+            <li className=" border-2 border-[#024A76] rounded-lg py-1 px-3 hover:bg-[#024A76]  hover:text-white hover:scale-110 duration-200">
               <Link to={"/Contact"}>
                 <button className="block md:p-0 font-bold mx-auto">
                   Contact
