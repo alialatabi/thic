@@ -53,19 +53,19 @@ export default function Searvic() {
       "We offer Personal Accident insurance, an annual protection round the clock 24 hours a day, 365 days a year against bodily injury temporary and total disability & death.    The indemnity limit for The protection is pre-agreed between our company and the client at internationally approved terms.";
   }
   return (
-    <div className="container mt-16 mb-16 mx-auto border-2 border-dotted border-[#024A76] border-opacity-75 rounded-3xl">
+    <div className="container mt-16 mb-16 p-4 mx-auto md:border-2 border-dotted border-[#024A76] border-opacity-75 rounded-3xl">
       <motion.div
         className="flex flex-col md:flex-row gap-10 md:m-10"
         initial="offscreen"
         whileInView="onscreen"
         viewport={{ once: true, amount: 1.0 }}
       >
-        <motion.div className="flex flex-row md:flex-col gap-5 w-[50%]">
+        <motion.div className="flex flex-col gap-5 w-[90%] md:w-[50%]">
           <p className="text-lg font-semibold text-slate-800 ">{headLine}</p>
           <p className="text-base text-slate-600 ">{txt}</p>
         </motion.div>
 
-        <motion.div className="w-[90%] md:w-[50%]">
+        <motion.div className="w-[90%] md:w-[50%] ">
           <img src={img} alt="insurance" className="w-96 md:w-9/12 mx-auto" />
         </motion.div>
       </motion.div>

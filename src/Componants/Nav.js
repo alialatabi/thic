@@ -74,7 +74,7 @@ export default function Nav() {
               >
                 <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
               </svg>
-              <div>info@trustiraq.com</div>
+              <a href="mailto: info@trustiraq.com">info@trustiraq.com</a>
             </li>
             <li className="flex flex-row space-x-2 text-xs md:text-base font-semibold text-[#024A76]">
               <svg
@@ -151,57 +151,44 @@ export default function Nav() {
             onClick={() => setIsNavOpen(false)}
           >
             <ul className="flex flex-col w-[75%] mx-auto md:w-full space-y-2 mt-4 md:flex-row md:space-y-0  md:space-x-6 md:mt-0 md:text-sm md:font-medium text-gray-800 ">
-              <li className=" border-2 border-[#024A76] rounded-lg py-1 px-3 hover:bg-[#024A76]  hover:text-white hover:scale-110 duration-200">
-                <Link to={"/"}>
-                  <button
-                    className="block md:p-0 font-bold mx-auto"
-                    onClick={toHome}
-                  >
-                    Home
-                  </button>
-                </Link>
-              </li>
+              <button
+                className="block md:p-0 font-bold mx-auto w-full"
+                onClick={toHome}
+              >
+                <li className=" border-2 border-[#024A76] rounded-lg py-1 px-3 hover:bg-[#024A76]  hover:text-white hover:scale-110 duration-200">
+                  <Link to={"/"}>Home</Link>
+                </li>
+              </button>
 
-              <li className=" border-2 border-[#024A76] rounded-lg py-1 px-3 hover:bg-[#024A76] hover:text-white hover:scale-110 duration-200">
-                <Link to={"/"}>
-                  <button
-                    className="block md:p-0 font-bold mx-auto"
-                    onClick={toAbout}
-                  >
-                    About
-                  </button>
-                </Link>
-              </li>
-
-              <li className=" border-2 border-[#024A76] rounded-lg py-1 px-3 hover:bg-[#024A76] hover:text-white hover:scale-110 duration-200">
-                <Link to={"/"}>
-                  <button
-                    className="block md:p-0 font-bold mx-auto"
-                    onClick={toServices}
-                  >
-                    Services
-                  </button>
-                </Link>
-              </li>
-
-              <li className=" border-2 border-[#024A76] rounded-lg py-1 px-3 hover:bg-[#024A76] hover:text-white hover:scale-110 duration-200">
-                <Link to={"/"}>
-                  <button
-                    className="block md:p-0 font-bold mx-auto"
-                    onClick={toTeam}
-                  >
-                    Our Team
-                  </button>
-                </Link>
-              </li>
-
-              <li className=" border-2 border-[#024A76] rounded-lg py-1 px-3 hover:bg-[#024A76]  hover:text-white hover:scale-110 duration-200">
-                <Link to={"/Contact"}>
-                  <button className="block md:p-0 font-bold mx-auto">
-                    Contact
-                  </button>
-                </Link>
-              </li>
+              <button
+                className="block md:p-0 font-bold mx-auto w-full"
+                onClick={toAbout}
+              >
+                <li className=" border-2 border-[#024A76] rounded-lg py-1 px-3 hover:bg-[#024A76] hover:text-white hover:scale-110 duration-200">
+                  <Link to={"/"}>About</Link>
+                </li>
+              </button>
+              <button
+                className="block md:p-0 font-bold mx-auto w-full"
+                onClick={toServices}
+              >
+                <li className=" border-2 border-[#024A76] rounded-lg py-1 px-3 hover:bg-[#024A76] hover:text-white hover:scale-110 duration-200">
+                  <Link to={"/"}>Services</Link>
+                </li>
+              </button>
+              <button
+                className="block md:p-0 font-bold mx-auto w-full"
+                onClick={toTeam}
+              >
+                <li className=" border-2 border-[#024A76] rounded-lg py-1 px-3 hover:bg-[#024A76] hover:text-white hover:scale-110 duration-200">
+                  <Link to={"/"}>Our Team</Link>
+                </li>
+              </button>
+              <button className="block md:p-0 font-bold mx-auto w-full">
+                <li className=" border-2 border-[#024A76] rounded-lg py-1 px-3 hover:bg-[#024A76]  hover:text-white hover:scale-110 duration-200">
+                  <Link to={"/Contact"}>Contact</Link>
+                </li>
+              </button>
             </ul>
           </div>
         </motion.div>
