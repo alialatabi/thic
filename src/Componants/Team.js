@@ -7,22 +7,6 @@ import shamal from "../static/images/shamal.png";
 import ali from "../static/images/ali.png";
 
 export default function Team() {
-  const springXVariants = {
-    offscreen: {
-      x: 300,
-      opacity: 0,
-    },
-    onscreen: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        bounce: 0.3,
-        duration: 2.0,
-      },
-    },
-  };
-
   return (
     <div id="team" className="container mx-auto ">
       <p className="ml-12 text-3xl font-semibold text-slate-700">Our Team</p>
@@ -33,10 +17,7 @@ export default function Team() {
           viewport={{ once: true, amount: 1.0 }}
           className="col-span-4 flex flex-row flex-wrap xl:flex-nowrap md:gap-x-10 gap-y-10 justify-center "
         >
-          <motion.div
-            className="w-[90%] md:w-[20%] 2xl:w[15%] text-center"
-            // variants={springXVariants}
-          >
+          <motion.div className="w-[90%] md:w-[20%] 2xl:w[15%] text-center">
             <div className="w-full h-40 2xl:h-48  rounded-lg ">
               <img
                 src={wamidh}
