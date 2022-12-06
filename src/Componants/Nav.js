@@ -53,7 +53,7 @@ export default function Nav() {
   return (
     <>
       <div className=" p-2 border-b-[1px] border-b-[#FA7269] border-opacity-30">
-        <div className="flex flex-row justify-evenly">
+        <div className="flex flex-row justify-around">
           <div className="hidden whitespace-nowrap md:flex md:flex-row text-base font-semibold text-[#024A76]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -98,7 +98,7 @@ export default function Nav() {
       >
         <motion.div
           variants={springYVariants}
-          className="container flex flex-wrap justify-between items-center  mx-auto relative z-30  "
+          className="container md:w-[90%] vlg:w-full flex flex-wrap justify-between items-center  mx-auto relative z-30  "
         >
           <Link to={"/"} className="flex items-center">
             <img
